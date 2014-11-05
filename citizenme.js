@@ -49,7 +49,7 @@ $(document).ready(function(){
 		getData : function(callback){
 			console.log('ok');
 			$.ajax({
-				url : '/getAWSData.json',
+				url : 'https://rawgit.com/cferretti/data-test/master/getAWSData.json',
 				success : function(data){
 					callback(data);
 				}
