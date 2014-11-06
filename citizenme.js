@@ -8,13 +8,10 @@ $(document).ready(function(){
 		URL : 'http://citizenme-tos-votes.s3.amazonaws.com',
 		services : [],
 		getServices : function(){
-			$.ajax({
-				url : this.URL,
-				dataType : 'text',
-				success : function(data){
+			$.getJSON(this.URL+'/ToS/citizenme.json', function(){
 					console.log(data);
 				}
-			});
+			);
 		}
 	}
 
