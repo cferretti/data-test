@@ -74,8 +74,8 @@ $(document).ready(function(){
 				//Check if revision exit
 				var subparts = service.split('-');
 				var revision = '';
-				if(typeof(subparts[2]) !== 'undefined' && subparts[2] !== ''){
-					revision = subparts[2];
+				if(typeof(subparts[1]) !== 'undefined' && subparts[1] !== ''){
+					revision = subparts[1];
 				}else if(!display_null){
 					can_be_displayed = false;
 				}
@@ -93,9 +93,11 @@ $(document).ready(function(){
 					reasonable_vote = data[i].count;
 				}
 
+				var index = service+revision;
+				
 				if(can_be_displayed){
-					if(converted_data.indexOf(parts[offsetService]) === -1){
-						converted_data[parts[offsetService]] = { 
+					if(converted_data.indexOf(index) === -1){
+						converted_data[index] = { 
 							'service' : service,
 							'rev' : revision,
 							'unreasonable' : unreasonable_vote,
@@ -104,9 +106,9 @@ $(document).ready(function(){
 						};
 					}else{
 						if(type == down_vote){
-							converted_data[parts[offsetService]].unreasonable = unreasonable_vote;
+							converted_data[index].unreasonable = unreasonable_vote;
 						}else if(type == up_vote){
-							converted_data[parts[offsetService]].reasonable = reasonable_vote;
+							converted_data[index].reasonable = reasonable_vote;
 						}
 					}
 				}
