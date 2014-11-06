@@ -156,7 +156,7 @@ $(document).ready(function(){
 				//Get part of the string
 				var parts = data[i].name.split('/');
 				var service = parts[offsetService+1];
-				var type = parts[offsetVoteType];
+				var type = parts[offsetVoteType+1];
 				//Check if revision exit
 				var subparts = service.split('-');
 				var revision = '';
