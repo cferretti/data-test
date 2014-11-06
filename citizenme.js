@@ -94,15 +94,16 @@ $(document).ready(function(){
 				}
 
 				var index = service+revision;
-				
+
 				if(can_be_displayed){
 					if(converted_data.indexOf(index) === -1){
+						var date = new Date(data[i].start_time*1000);
 						converted_data[index] = { 
 							'service' : service,
 							'rev' : revision,
 							'unreasonable' : unreasonable_vote,
 							'reasonable' : reasonable_vote,
-							'time' : new Date(data[i].start_time*1000).toLocaleDateString()
+							'time' : date.getUTCFullYear()+"/"+(date.getUTCMonth() + 1)+"/"+date.getUTCDate()
 						};
 					}else{
 						if(type == down_vote){
