@@ -9,8 +9,8 @@ $(document).ready(function(){
 		services : [],
 		getServices : function(){
 			$.ajax({
-				url : this.URL+'/tos-votes',
-				dataType : 'json',
+				url : this.URL,
+				dataType : 'text',
 				success : function(data){
 					console.log(data);
 				}
@@ -19,7 +19,7 @@ $(document).ready(function(){
 	}
 
 	// AwsToS.getServices();
-	
+
 	var urlDataTotal = 'https://rawgit.com/cferretti/data-test/master/%s-total.json';
 	var urlDataPoint = 'https://rawgit.com/cferretti/data-test/master/%s-points-total.json';
 	var offsetService = 4;
