@@ -18,7 +18,7 @@ $(document).ready(function(){
 		}
 	}
 
-	AwsToS.getServices();
+	// AwsToS.getServices();
 	
 	var urlDataTotal = 'https://rawgit.com/cferretti/data-test/master/%s-total.json';
 	var urlDataPoint = 'https://rawgit.com/cferretti/data-test/master/%s-points-total.json';
