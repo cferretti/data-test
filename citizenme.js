@@ -1,4 +1,34 @@
 $(document).ready(function(){
+
+	/*
+	AWS S3 Getter for get data
+	*/
+
+	var AwsToS = {
+		ACCESS_TOKEN : '63jlY3SN5PjLvIdnx+EHaRpxF8/Dpvj1funt0OnD6oKdnybv4cybDJu8C2k9o9OuC+XHuDfDZiQ=',
+		ACCESS_ID : 'EE69597F5597F58A',
+		setCredentials : function(){
+			AWS.config.update({accessKeyId: this.ACCESS_ID, secretAccessKey: this.ACCESS_TOKEN });
+		},
+		getServices : function(){
+			var bucket = new AWS.S3({params: {Bucket: 'citizenme-tos-votes'}});
+			bucket.listObjects(function (err, data) {
+				if (err) {
+				  alert(err);
+				} else {
+				  for (var i = 0; i < data.Contents.length; i++) {
+				      console.log(data.Contents[i]);
+				  }
+				}
+			});
+		}
+	}
+
+	AwsToS.setCredentials();
+	AwsToS.getServices();
+	
+
+
 	var urlDataTotal = 'https://rawgit.com/cferretti/data-test/master/%s-total.json';
 	var urlDataPoint = 'https://rawgit.com/cferretti/data-test/master/%s-points-total.json';
 	var offsetService = 4;
