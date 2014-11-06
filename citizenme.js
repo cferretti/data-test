@@ -56,6 +56,9 @@ $(document).ready(function(){
 			var _self = this;
 			//add listener to dropdown
 			dropdown.on('change', function _changeServiceListener(event){
+				$('#btn_back').remove();
+				_self.setRowsEvent(true);
+				_self.setRowsEvent();
 				_self.getDataTotal(this, function(data){ _self.createData(data); });
 			});
 
@@ -72,9 +75,12 @@ $(document).ready(function(){
 				id : 'btn_back'
 			}).text('Back');
 
+			var _self = this;
+			this.setRowsEvent(true);
 			btn_back.on('click', function(e){
 				e.preventDefault();
 				$('#dropdown_services').trigger('change');
+				_self.setRowsEvent();
 				this.remove();
 			});
 
@@ -204,7 +210,12 @@ $(document).ready(function(){
 				this.data.push(converted_data[i]);
 			}
 
-			this.setData();
+			if(this.data.length > 0){
+				this.setData();
+				this.createBackBtn();
+			}else{
+				alert('No details');
+			}
 		},
 		initTable : function(){
 			this.datatable = this.elem.dataTable({
@@ -215,22 +226,39 @@ $(document).ready(function(){
 		            { "title": "Revision", "class": "rev", "data" : "rev" },
 		            { "title": "Reasonable", "data" : "reasonable" },
 		            { "title": "Unreasonable", "data" :"unreasonable"},
-		            { "title": "Avg. Note", "data" : "time" }
+		            { "title": "Date", "data" : "time" }
 		        ],
 		        order: [[ 4, "desc" ]]
 			});
 
+			this.setRowsEvent();
+			
+		},
+		setRowsEvent : function(disabled){
 			var _self = this;
-			this.elem.find('tbody').on( 'click', 'tr', function () {
-				var rev = $(this).find('.rev').text()
-				var service = $(this).find('.service').text()
-				_self.getDataPoint(rev, service, function(data){ _self.createDataPoint(data, rev); _self.createBackBtn(); });
-			});
+			//By default put as enabled
+			if(typeof(disabled) === 'undefined'){
+				disabled = false;
+			}
+
+			var tbody = this.elem.find('tbody');
+			if(!disabled){
+				tbody.on( 'click', 'tr', function () {
+					var rev = $(this).find('.rev').text()
+					var service = $(this).find('.service').text()
+					_self.getDataPoint(rev, service, function(data){ _self.createDataPoint(data, rev); });
+				});
+			}else{
+				//Disabled event
+				tbody.off( 'click', 'tr');
+			}
 		},
 		setData : function(){
-			this.datatable.fnClearTable();
-	        this.datatable.fnAddData(this.data);
-	        this.datatable.fnAdjustColumnSizing();
+			if(this.data.length > 0){
+				this.datatable.fnClearTable();
+		        this.datatable.fnAddData(this.data);
+		        this.datatable.fnAdjustColumnSizing();
+		    }
 		},
 		getDataTotal : function(select, callback){
 			$.ajax({
