@@ -302,7 +302,7 @@ $(document).ready(function(){
 	};
 
 
-	$.fn.citizenTable = function(options) {  
+	jQuery.fn.citizenTable = function(options) {  
 		var config = {}; 
 		var defaults = $.extend(defaults, options);
 
