@@ -1,5 +1,21 @@
 $(document).ready(function(){
 
+	function nodeToObject(node) {
+	    var obj = {}, i;
+	    obj.nodeType = node.nodeType;
+	    obj.nodeName = node.nodeName;
+	    obj.nodeValue = node.nodeValue;
+	    obj.childNodes = [];
+	    obj.attributes = {};
+	    if (node.childNodes && node.childNodes.length)
+	        for (i = 0; i < node.childNodes.length; ++i)
+	            obj.childNodes.push(nodeToObject(node.childNodes[i]));
+	    if (node.attributes && node.attributes.length)
+	        for (i = 0; i < node.attributes.length; ++i)
+	            obj.attributes[node.attributes[i].nodeName] = node.attributes[i].nodeValue;
+	    return obj;
+	}
+
 	/*
 	AWS S3 Getter for get data
 	*/
@@ -7,18 +23,28 @@ $(document).ready(function(){
 	var AwsToS = {
 		URL : 'http://citizenme-tos-votes.s3.amazonaws.com',
 		services : [],
-		getServices : function(){
-			$.getJSON(this.URL+'/ToS/citizenme.json', function(){
-					console.log(data);
+		getServiceTotal : function(service, callback){
+			$.ajax({
+				url : "http://citizenme-tos-votes.s3.amazonaws.com/votes/"+service+"-total.json",
+				dataType : 'json',
+				type : 'GET',
+				success : function(data){
+					callback(data);
 				}
-			);
+			});
+		},
+		getServicePoints : function(service, callback){
+			$.ajax({
+				url : "http://citizenme-tos-votes.s3.amazonaws.com/votes/"+service+"-points-total.json",
+				dataType : 'json',
+				type : 'GET',
+				success : function(data){
+					callback(data);
+				}
+			});
 		}
 	}
-
-	AwsToS.getServices();
-
-	var urlDataTotal = 'https://rawgit.com/cferretti/data-test/master/%s-total.json';
-	var urlDataPoint = 'https://rawgit.com/cferretti/data-test/master/%s-points-total.json';
+	
 	var offsetService = 4;
 	var offsetVoteType = 3;
 	var down_vote = 'unreasonablechange'; 
@@ -77,7 +103,7 @@ $(document).ready(function(){
 				$('#btn_back').remove();
 				_self.setRowsEvent(true);
 				_self.setRowsEvent();
-				_self.getDataTotal(this, function(data){ _self.createData(data); });
+				AwsToS.getServiceTotal($(this).val(), function(data){ _self.createData(data); });
 			});
 
 			dropdown.trigger('change');
@@ -264,7 +290,7 @@ $(document).ready(function(){
 				tbody.on( 'click', 'tr', function () {
 					var rev = $(this).find('.rev').text()
 					var service = $(this).find('.service').text()
-					_self.getDataPoint(rev, service, function(data){ _self.createDataPoint(data, rev); });
+					AwsToS.getServicePoints(service, function(data){ _self.createDataPoint(data, rev); });
 				});
 			}else{
 				//Disabled event
@@ -277,24 +303,6 @@ $(document).ready(function(){
 		        this.datatable.fnAddData(this.data);
 		        this.datatable.fnAdjustColumnSizing();
 		    }
-		},
-		getDataTotal : function(select, callback){
-			$.ajax({
-				url : urlDataTotal.replace('%s',$(select).val()),
-				success : function(data){
-					console.log(data);
-					callback(data);
-				}
-			});
-		},
-		getDataPoint : function(revision, service, callback){
-			$.ajax({
-				url : urlDataPoint.replace('%s',service),
-				success : function(data){
-					console.log(data);
-					callback(data);
-				}
-			});
 		}
 	};
 
