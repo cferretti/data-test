@@ -1,0 +1,1511 @@
+[
+  {
+    "sha": "b007b6207a6457be72e1070881bca9ea39af6dc6",
+    "commit": {
+      "author": {
+        "name": "Greer Hahn",
+        "email": "greer@citizenme.com",
+        "date": "2014-11-07T11:00:07Z"
+      },
+      "committer": {
+        "name": "Greer Hahn",
+        "email": "greer@citizenme.com",
+        "date": "2014-11-07T11:00:07Z"
+      },
+      "message": "LinkedIn review following changes to ToS on 03/10/2014 (effective 23/10/2014)",
+      "tree": {
+        "sha": "beb5b54a844a39587521d63f26a386e34d0a589a",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/beb5b54a844a39587521d63f26a386e34d0a589a"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/b007b6207a6457be72e1070881bca9ea39af6dc6",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/b007b6207a6457be72e1070881bca9ea39af6dc6",
+    "html_url": "https://github.com/citizenme/Content/commit/b007b6207a6457be72e1070881bca9ea39af6dc6",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/b007b6207a6457be72e1070881bca9ea39af6dc6/comments",
+    "author": {
+      "login": "GreerHahn",
+      "id": 7126481,
+      "avatar_url": "https://avatars.githubusercontent.com/u/7126481?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GreerHahn",
+      "html_url": "https://github.com/GreerHahn",
+      "followers_url": "https://api.github.com/users/GreerHahn/followers",
+      "following_url": "https://api.github.com/users/GreerHahn/following{/other_user}",
+      "gists_url": "https://api.github.com/users/GreerHahn/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/GreerHahn/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/GreerHahn/subscriptions",
+      "organizations_url": "https://api.github.com/users/GreerHahn/orgs",
+      "repos_url": "https://api.github.com/users/GreerHahn/repos",
+      "events_url": "https://api.github.com/users/GreerHahn/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/GreerHahn/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "GreerHahn",
+      "id": 7126481,
+      "avatar_url": "https://avatars.githubusercontent.com/u/7126481?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GreerHahn",
+      "html_url": "https://github.com/GreerHahn",
+      "followers_url": "https://api.github.com/users/GreerHahn/followers",
+      "following_url": "https://api.github.com/users/GreerHahn/following{/other_user}",
+      "gists_url": "https://api.github.com/users/GreerHahn/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/GreerHahn/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/GreerHahn/subscriptions",
+      "organizations_url": "https://api.github.com/users/GreerHahn/orgs",
+      "repos_url": "https://api.github.com/users/GreerHahn/repos",
+      "events_url": "https://api.github.com/users/GreerHahn/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/GreerHahn/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fe6a84add3fa544f71288f89b658bf57cbada242",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/fe6a84add3fa544f71288f89b658bf57cbada242",
+        "html_url": "https://github.com/citizenme/Content/commit/fe6a84add3fa544f71288f89b658bf57cbada242"
+      }
+    ]
+  },
+  {
+    "sha": "fe6a84add3fa544f71288f89b658bf57cbada242",
+    "commit": {
+      "author": {
+        "name": "Greer Hahn",
+        "email": "greer@citizenme.com",
+        "date": "2014-09-15T16:03:16Z"
+      },
+      "committer": {
+        "name": "Greer Hahn",
+        "email": "greer@citizenme.com",
+        "date": "2014-09-15T16:03:16Z"
+      },
+      "message": "Changed JDM wording",
+      "tree": {
+        "sha": "f67f38656a9c2edf5e9d243eaa30dd9b8c1b26bb",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/f67f38656a9c2edf5e9d243eaa30dd9b8c1b26bb"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/fe6a84add3fa544f71288f89b658bf57cbada242",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/fe6a84add3fa544f71288f89b658bf57cbada242",
+    "html_url": "https://github.com/citizenme/Content/commit/fe6a84add3fa544f71288f89b658bf57cbada242",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/fe6a84add3fa544f71288f89b658bf57cbada242/comments",
+    "author": {
+      "login": "GreerHahn",
+      "id": 7126481,
+      "avatar_url": "https://avatars.githubusercontent.com/u/7126481?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GreerHahn",
+      "html_url": "https://github.com/GreerHahn",
+      "followers_url": "https://api.github.com/users/GreerHahn/followers",
+      "following_url": "https://api.github.com/users/GreerHahn/following{/other_user}",
+      "gists_url": "https://api.github.com/users/GreerHahn/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/GreerHahn/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/GreerHahn/subscriptions",
+      "organizations_url": "https://api.github.com/users/GreerHahn/orgs",
+      "repos_url": "https://api.github.com/users/GreerHahn/repos",
+      "events_url": "https://api.github.com/users/GreerHahn/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/GreerHahn/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "GreerHahn",
+      "id": 7126481,
+      "avatar_url": "https://avatars.githubusercontent.com/u/7126481?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GreerHahn",
+      "html_url": "https://github.com/GreerHahn",
+      "followers_url": "https://api.github.com/users/GreerHahn/followers",
+      "following_url": "https://api.github.com/users/GreerHahn/following{/other_user}",
+      "gists_url": "https://api.github.com/users/GreerHahn/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/GreerHahn/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/GreerHahn/subscriptions",
+      "organizations_url": "https://api.github.com/users/GreerHahn/orgs",
+      "repos_url": "https://api.github.com/users/GreerHahn/repos",
+      "events_url": "https://api.github.com/users/GreerHahn/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/GreerHahn/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5a691a3ba79b88ab434e832e974bce2974fbac7a",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/5a691a3ba79b88ab434e832e974bce2974fbac7a",
+        "html_url": "https://github.com/citizenme/Content/commit/5a691a3ba79b88ab434e832e974bce2974fbac7a"
+      }
+    ]
+  },
+  {
+    "sha": "71718b55c28152eaa1fce7e7fa887196ae60b553",
+    "commit": {
+      "author": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-08-08T09:50:10Z"
+      },
+      "committer": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-08-08T09:50:10Z"
+      },
+      "message": "Complete rewrite of all ToS services with attribute (name) order stability such that future ToS edits are easier to compare",
+      "tree": {
+        "sha": "be257b3a82db2caaf86185fe2bc910b66def4539",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/be257b3a82db2caaf86185fe2bc910b66def4539"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/71718b55c28152eaa1fce7e7fa887196ae60b553",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/71718b55c28152eaa1fce7e7fa887196ae60b553",
+    "html_url": "https://github.com/citizenme/Content/commit/71718b55c28152eaa1fce7e7fa887196ae60b553",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/71718b55c28152eaa1fce7e7fa887196ae60b553/comments",
+    "author": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c32fd97b2aad534abd8389d3d736fa787bd31438",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/c32fd97b2aad534abd8389d3d736fa787bd31438",
+        "html_url": "https://github.com/citizenme/Content/commit/c32fd97b2aad534abd8389d3d736fa787bd31438"
+      }
+    ]
+  },
+  {
+    "sha": "b29cba3e0d91a110486957452cdbfe8595eaea04",
+    "commit": {
+      "author": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-08-07T15:20:02Z"
+      },
+      "committer": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-08-07T15:20:02Z"
+      },
+      "message": "One facebook deeplink URL fixed from http->https",
+      "tree": {
+        "sha": "7993a262701396900834683d5fde2c8ea7aa6642",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/7993a262701396900834683d5fde2c8ea7aa6642"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/b29cba3e0d91a110486957452cdbfe8595eaea04",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/b29cba3e0d91a110486957452cdbfe8595eaea04",
+    "html_url": "https://github.com/citizenme/Content/commit/b29cba3e0d91a110486957452cdbfe8595eaea04",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/b29cba3e0d91a110486957452cdbfe8595eaea04/comments",
+    "author": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1c569e1cff34b794b66aa43b7123cba63674f227",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/1c569e1cff34b794b66aa43b7123cba63674f227",
+        "html_url": "https://github.com/citizenme/Content/commit/1c569e1cff34b794b66aa43b7123cba63674f227"
+      }
+    ]
+  },
+  {
+    "sha": "1c569e1cff34b794b66aa43b7123cba63674f227",
+    "commit": {
+      "author": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-08-07T13:11:08Z"
+      },
+      "committer": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-08-07T13:11:08Z"
+      },
+      "message": "Facebook deeplinks changed due to github iOS-App-a2#229 (domain now: fb.com and all URLs are https based) - also refreshed a couple of them that have since changed (e.g. apps permissions)",
+      "tree": {
+        "sha": "ede740a88b41a01375643dcba6b9b61f96caced3",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/ede740a88b41a01375643dcba6b9b61f96caced3"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/1c569e1cff34b794b66aa43b7123cba63674f227",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/1c569e1cff34b794b66aa43b7123cba63674f227",
+    "html_url": "https://github.com/citizenme/Content/commit/1c569e1cff34b794b66aa43b7123cba63674f227",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/1c569e1cff34b794b66aa43b7123cba63674f227/comments",
+    "author": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "76e1d48e214a29fedf01617ca1d5cbb23070be15",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/76e1d48e214a29fedf01617ca1d5cbb23070be15",
+        "html_url": "https://github.com/citizenme/Content/commit/76e1d48e214a29fedf01617ca1d5cbb23070be15"
+      }
+    ]
+  },
+  {
+    "sha": "01cffd74b347bfab75725d02ff1dc8fc9520ed4c",
+    "commit": {
+      "author": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-05-13T15:35:19Z"
+      },
+      "committer": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-05-13T15:35:19Z"
+      },
+      "message": "Added linkid to each deeplink, which will be used by app to submit piwik\nstats and act as a unique identifier",
+      "tree": {
+        "sha": "7466619e03454d6560cd83df484c5a234d962265",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/7466619e03454d6560cd83df484c5a234d962265"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/01cffd74b347bfab75725d02ff1dc8fc9520ed4c",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/01cffd74b347bfab75725d02ff1dc8fc9520ed4c",
+    "html_url": "https://github.com/citizenme/Content/commit/01cffd74b347bfab75725d02ff1dc8fc9520ed4c",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/01cffd74b347bfab75725d02ff1dc8fc9520ed4c/comments",
+    "author": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c8573b974261015817968f3353a4ecd167f23eaf",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/c8573b974261015817968f3353a4ecd167f23eaf",
+        "html_url": "https://github.com/citizenme/Content/commit/c8573b974261015817968f3353a4ecd167f23eaf"
+      }
+    ]
+  },
+  {
+    "sha": "c8573b974261015817968f3353a4ecd167f23eaf",
+    "commit": {
+      "author": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-04-21T13:46:03Z"
+      },
+      "committer": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-04-21T13:46:03Z"
+      },
+      "message": "Minor data fix removing source-date as it's only used in one point/service\nin the whole data set",
+      "tree": {
+        "sha": "cec34f3edbb5a0c61a8a83d3628d6cbec1d260f0",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/cec34f3edbb5a0c61a8a83d3628d6cbec1d260f0"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/c8573b974261015817968f3353a4ecd167f23eaf",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/c8573b974261015817968f3353a4ecd167f23eaf",
+    "html_url": "https://github.com/citizenme/Content/commit/c8573b974261015817968f3353a4ecd167f23eaf",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/c8573b974261015817968f3353a4ecd167f23eaf/comments",
+    "author": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4875ee63ecd79a6d579de4a58494003e0139c42b",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/4875ee63ecd79a6d579de4a58494003e0139c42b",
+        "html_url": "https://github.com/citizenme/Content/commit/4875ee63ecd79a6d579de4a58494003e0139c42b"
+      }
+    ]
+  },
+  {
+    "sha": "8cc59c06fa73e582291aa5a9cfcc536adc04a495",
+    "commit": {
+      "author": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-04-18T13:20:27Z"
+      },
+      "committer": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-04-18T13:20:27Z"
+      },
+      "message": "Datafix to change some service->class values from boolean to empty string\nas the field is used for ratings A-D as well",
+      "tree": {
+        "sha": "176ee1c7444b02309665f46080cd81bd639c0525",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/176ee1c7444b02309665f46080cd81bd639c0525"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/8cc59c06fa73e582291aa5a9cfcc536adc04a495",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/8cc59c06fa73e582291aa5a9cfcc536adc04a495",
+    "html_url": "https://github.com/citizenme/Content/commit/8cc59c06fa73e582291aa5a9cfcc536adc04a495",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/8cc59c06fa73e582291aa5a9cfcc536adc04a495/comments",
+    "author": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1988a8f0665fc789cfa4b58a2bf4d6c097fec8a3",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/1988a8f0665fc789cfa4b58a2bf4d6c097fec8a3",
+        "html_url": "https://github.com/citizenme/Content/commit/1988a8f0665fc789cfa4b58a2bf4d6c097fec8a3"
+      }
+    ]
+  },
+  {
+    "sha": "5eb9fcd67aaafbaca757b3900e94f914ee3527af",
+    "commit": {
+      "author": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-04-16T15:26:23Z"
+      },
+      "committer": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-04-16T15:26:23Z"
+      },
+      "message": "Minor changes to make ToS UTF-8 compliant following from Google Doc\ncharacter punctuation \"hash\" in different character set",
+      "tree": {
+        "sha": "239ddd6a34db03d1f7ee58bbace9f9fbadc20d7e",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/239ddd6a34db03d1f7ee58bbace9f9fbadc20d7e"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/5eb9fcd67aaafbaca757b3900e94f914ee3527af",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/5eb9fcd67aaafbaca757b3900e94f914ee3527af",
+    "html_url": "https://github.com/citizenme/Content/commit/5eb9fcd67aaafbaca757b3900e94f914ee3527af",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/5eb9fcd67aaafbaca757b3900e94f914ee3527af/comments",
+    "author": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b98f9f90a963ef1d0ac1d8fe60ad9ccdc382fbe5",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/b98f9f90a963ef1d0ac1d8fe60ad9ccdc382fbe5",
+        "html_url": "https://github.com/citizenme/Content/commit/b98f9f90a963ef1d0ac1d8fe60ad9ccdc382fbe5"
+      }
+    ]
+  },
+  {
+    "sha": "b98f9f90a963ef1d0ac1d8fe60ad9ccdc382fbe5",
+    "commit": {
+      "author": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-04-16T15:19:21Z"
+      },
+      "committer": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-04-16T15:19:21Z"
+      },
+      "message": "Merge branch 'mortendev' into editor\n\nConflicts:\n\tToS/google.json\n\tToS/twitter.json",
+      "tree": {
+        "sha": "e8256aa76f12bd29a0b95b0489fec44e3c5f0517",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/e8256aa76f12bd29a0b95b0489fec44e3c5f0517"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/b98f9f90a963ef1d0ac1d8fe60ad9ccdc382fbe5",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/b98f9f90a963ef1d0ac1d8fe60ad9ccdc382fbe5",
+    "html_url": "https://github.com/citizenme/Content/commit/b98f9f90a963ef1d0ac1d8fe60ad9ccdc382fbe5",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/b98f9f90a963ef1d0ac1d8fe60ad9ccdc382fbe5/comments",
+    "author": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e3c76ad870060d5a962af556af78fdfa944fea3c",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/e3c76ad870060d5a962af556af78fdfa944fea3c",
+        "html_url": "https://github.com/citizenme/Content/commit/e3c76ad870060d5a962af556af78fdfa944fea3c"
+      },
+      {
+        "sha": "62fcceeac35c31bd8010579f0be2f4d865c3013e",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/62fcceeac35c31bd8010579f0be2f4d865c3013e",
+        "html_url": "https://github.com/citizenme/Content/commit/62fcceeac35c31bd8010579f0be2f4d865c3013e"
+      }
+    ]
+  },
+  {
+    "sha": "83e56f8488de2986bc6af13780457d6df8dbd4b5",
+    "commit": {
+      "author": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-04-16T09:23:37Z"
+      },
+      "committer": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-04-16T09:23:37Z"
+      },
+      "message": "G+ review - fixes #7",
+      "tree": {
+        "sha": "68ae9bc645f8f5bb3ad3dc73ff68da37bbc94f66",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/68ae9bc645f8f5bb3ad3dc73ff68da37bbc94f66"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/83e56f8488de2986bc6af13780457d6df8dbd4b5",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/83e56f8488de2986bc6af13780457d6df8dbd4b5",
+    "html_url": "https://github.com/citizenme/Content/commit/83e56f8488de2986bc6af13780457d6df8dbd4b5",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/83e56f8488de2986bc6af13780457d6df8dbd4b5/comments",
+    "author": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "95b3bdcb8d6aff202e8445acdb99e0e504e4e376",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/95b3bdcb8d6aff202e8445acdb99e0e504e4e376",
+        "html_url": "https://github.com/citizenme/Content/commit/95b3bdcb8d6aff202e8445acdb99e0e504e4e376"
+      }
+    ]
+  },
+  {
+    "sha": "8e95ae32edd28401c2fba06302238037bdaec7a8",
+    "commit": {
+      "author": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-04-16T08:31:17Z"
+      },
+      "committer": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-04-16T08:31:17Z"
+      },
+      "message": "Facebook review - issue #2",
+      "tree": {
+        "sha": "462cb1c033aefd7a50a488c60dff54f27ab77606",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/462cb1c033aefd7a50a488c60dff54f27ab77606"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/8e95ae32edd28401c2fba06302238037bdaec7a8",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/8e95ae32edd28401c2fba06302238037bdaec7a8",
+    "html_url": "https://github.com/citizenme/Content/commit/8e95ae32edd28401c2fba06302238037bdaec7a8",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/8e95ae32edd28401c2fba06302238037bdaec7a8/comments",
+    "author": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d3202021c379f115ef2cbd1c092be6d5cf3c6f65",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/d3202021c379f115ef2cbd1c092be6d5cf3c6f65",
+        "html_url": "https://github.com/citizenme/Content/commit/d3202021c379f115ef2cbd1c092be6d5cf3c6f65"
+      }
+    ]
+  },
+  {
+    "sha": "62fcceeac35c31bd8010579f0be2f4d865c3013e",
+    "commit": {
+      "author": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-04-10T11:17:09Z"
+      },
+      "committer": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-04-10T11:17:09Z"
+      },
+      "message": "Manual data fix to fix id of points such that they're unique",
+      "tree": {
+        "sha": "06ea787881475a131672bd28a1b2b4dfbb27f95e",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/06ea787881475a131672bd28a1b2b4dfbb27f95e"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/62fcceeac35c31bd8010579f0be2f4d865c3013e",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/62fcceeac35c31bd8010579f0be2f4d865c3013e",
+    "html_url": "https://github.com/citizenme/Content/commit/62fcceeac35c31bd8010579f0be2f4d865c3013e",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/62fcceeac35c31bd8010579f0be2f4d865c3013e/comments",
+    "author": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "afc7cc6515f6017bd0119b60f08a62ed4b068825",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/afc7cc6515f6017bd0119b60f08a62ed4b068825",
+        "html_url": "https://github.com/citizenme/Content/commit/afc7cc6515f6017bd0119b60f08a62ed4b068825"
+      }
+    ]
+  },
+  {
+    "sha": "afc7cc6515f6017bd0119b60f08a62ed4b068825",
+    "commit": {
+      "author": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-04-09T23:24:53Z"
+      },
+      "committer": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-04-09T23:24:53Z"
+      },
+      "message": "Data cleanup - loads of crappy, outdated, empty, inconsistent, incoherent\nstuff",
+      "tree": {
+        "sha": "4670efa6384378b1e2594fe3932180ad314311c9",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/4670efa6384378b1e2594fe3932180ad314311c9"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/afc7cc6515f6017bd0119b60f08a62ed4b068825",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/afc7cc6515f6017bd0119b60f08a62ed4b068825",
+    "html_url": "https://github.com/citizenme/Content/commit/afc7cc6515f6017bd0119b60f08a62ed4b068825",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/afc7cc6515f6017bd0119b60f08a62ed4b068825/comments",
+    "author": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e37f78d694cb35a9bea48ca6024a0698f0e5cbbb",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/e37f78d694cb35a9bea48ca6024a0698f0e5cbbb",
+        "html_url": "https://github.com/citizenme/Content/commit/e37f78d694cb35a9bea48ca6024a0698f0e5cbbb"
+      }
+    ]
+  },
+  {
+    "sha": "01b9b0d7c73b3cbc7067f18f07c232679bc38198",
+    "commit": {
+      "author": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-04-03T14:40:58Z"
+      },
+      "committer": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-04-03T14:40:58Z"
+      },
+      "message": "Deeplink and JDM changes",
+      "tree": {
+        "sha": "2cf7424ee6be1721ed4ba79102cf1835eff7178e",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/2cf7424ee6be1721ed4ba79102cf1835eff7178e"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/01b9b0d7c73b3cbc7067f18f07c232679bc38198",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/01b9b0d7c73b3cbc7067f18f07c232679bc38198",
+    "html_url": "https://github.com/citizenme/Content/commit/01b9b0d7c73b3cbc7067f18f07c232679bc38198",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/01b9b0d7c73b3cbc7067f18f07c232679bc38198/comments",
+    "author": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9b1381851af23e3a3a079d2ea6d6450fe9202754",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/9b1381851af23e3a3a079d2ea6d6450fe9202754",
+        "html_url": "https://github.com/citizenme/Content/commit/9b1381851af23e3a3a079d2ea6d6450fe9202754"
+      }
+    ]
+  },
+  {
+    "sha": "9b1381851af23e3a3a079d2ea6d6450fe9202754",
+    "commit": {
+      "author": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-02-27T17:06:12Z"
+      },
+      "committer": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-02-27T17:06:12Z"
+      },
+      "message": "Amended all services with deeplinks section template - except for\nfacebook&twitter we actually have data",
+      "tree": {
+        "sha": "3c7430827e293c89f24404025d82c927afb8ed8f",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/3c7430827e293c89f24404025d82c927afb8ed8f"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/9b1381851af23e3a3a079d2ea6d6450fe9202754",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/9b1381851af23e3a3a079d2ea6d6450fe9202754",
+    "html_url": "https://github.com/citizenme/Content/commit/9b1381851af23e3a3a079d2ea6d6450fe9202754",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/9b1381851af23e3a3a079d2ea6d6450fe9202754/comments",
+    "author": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b44edf2cc80ef5868988c71ffc41e3ea8825bdf7",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/b44edf2cc80ef5868988c71ffc41e3ea8825bdf7",
+        "html_url": "https://github.com/citizenme/Content/commit/b44edf2cc80ef5868988c71ffc41e3ea8825bdf7"
+      }
+    ]
+  },
+  {
+    "sha": "b44edf2cc80ef5868988c71ffc41e3ea8825bdf7",
+    "commit": {
+      "author": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-02-27T16:12:51Z"
+      },
+      "committer": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-02-27T16:12:51Z"
+      },
+      "message": "Fixed syntax errors caused by missing quote",
+      "tree": {
+        "sha": "70f4ff636e4158003fdb5f0bb57a9071c38d2f0f",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/70f4ff636e4158003fdb5f0bb57a9071c38d2f0f"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/b44edf2cc80ef5868988c71ffc41e3ea8825bdf7",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/b44edf2cc80ef5868988c71ffc41e3ea8825bdf7",
+    "html_url": "https://github.com/citizenme/Content/commit/b44edf2cc80ef5868988c71ffc41e3ea8825bdf7",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/b44edf2cc80ef5868988c71ffc41e3ea8825bdf7/comments",
+    "author": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "091aac2e51c77b6ed792e0e471d90c9ad00c5a8f",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/091aac2e51c77b6ed792e0e471d90c9ad00c5a8f",
+        "html_url": "https://github.com/citizenme/Content/commit/091aac2e51c77b6ed792e0e471d90c9ad00c5a8f"
+      }
+    ]
+  },
+  {
+    "sha": "091aac2e51c77b6ed792e0e471d90c9ad00c5a8f",
+    "commit": {
+      "author": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-02-27T15:47:04Z"
+      },
+      "committer": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-02-27T15:47:04Z"
+      },
+      "message": "Added deeplinks to the 6 services that they existed for on Alpha server",
+      "tree": {
+        "sha": "0c9034cf525f0a81cb449f1d14b71357fb618415",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/0c9034cf525f0a81cb449f1d14b71357fb618415"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/091aac2e51c77b6ed792e0e471d90c9ad00c5a8f",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/091aac2e51c77b6ed792e0e471d90c9ad00c5a8f",
+    "html_url": "https://github.com/citizenme/Content/commit/091aac2e51c77b6ed792e0e471d90c9ad00c5a8f",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/091aac2e51c77b6ed792e0e471d90c9ad00c5a8f/comments",
+    "author": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ba4d155db6a6a65a8ddd7c6091299f767822d0ff",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/ba4d155db6a6a65a8ddd7c6091299f767822d0ff",
+        "html_url": "https://github.com/citizenme/Content/commit/ba4d155db6a6a65a8ddd7c6091299f767822d0ff"
+      }
+    ]
+  },
+  {
+    "sha": "5d0083433042573b1043022721ae5fb209db449c",
+    "commit": {
+      "author": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-02-27T09:50:52Z"
+      },
+      "committer": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-02-27T09:50:52Z"
+      },
+      "message": "Added 4 services and amended a total of 30 services with icon information\nfrom static content servers (URIs only)",
+      "tree": {
+        "sha": "795212b326ce00ee36ba9f211f4569572973712e",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/795212b326ce00ee36ba9f211f4569572973712e"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/5d0083433042573b1043022721ae5fb209db449c",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/5d0083433042573b1043022721ae5fb209db449c",
+    "html_url": "https://github.com/citizenme/Content/commit/5d0083433042573b1043022721ae5fb209db449c",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/5d0083433042573b1043022721ae5fb209db449c/comments",
+    "author": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c6571ba3862285a3d82574a909f063c4e47b0dbe",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/c6571ba3862285a3d82574a909f063c4e47b0dbe",
+        "html_url": "https://github.com/citizenme/Content/commit/c6571ba3862285a3d82574a909f063c4e47b0dbe"
+      }
+    ]
+  },
+  {
+    "sha": "af3aa9c2c13a9d07431525fa765e4abbd5b41e65",
+    "commit": {
+      "author": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-02-10T19:01:54Z"
+      },
+      "committer": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-02-10T19:01:54Z"
+      },
+      "message": "Removed all HTML tags in content",
+      "tree": {
+        "sha": "f2ffa2b2e36b111be4e6f60a2cc39f5508f6cf28",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/f2ffa2b2e36b111be4e6f60a2cc39f5508f6cf28"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/af3aa9c2c13a9d07431525fa765e4abbd5b41e65",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/af3aa9c2c13a9d07431525fa765e4abbd5b41e65",
+    "html_url": "https://github.com/citizenme/Content/commit/af3aa9c2c13a9d07431525fa765e4abbd5b41e65",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/af3aa9c2c13a9d07431525fa765e4abbd5b41e65/comments",
+    "author": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "eed4fec524d7f57a16723b796c9df1144b680d94",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/eed4fec524d7f57a16723b796c9df1144b680d94",
+        "html_url": "https://github.com/citizenme/Content/commit/eed4fec524d7f57a16723b796c9df1144b680d94"
+      }
+    ]
+  },
+  {
+    "sha": "11db4ae2fcbdf9f9153674c462e450b23d6c0f7f",
+    "commit": {
+      "author": {
+        "name": "vertx",
+        "email": "vertx@vm-dev.internal.citizenme.com",
+        "date": "2014-01-27T18:57:29Z"
+      },
+      "committer": {
+        "name": "vertx",
+        "email": "vertx@vm-dev.internal.citizenme.com",
+        "date": "2014-01-27T18:57:29Z"
+      },
+      "message": "Amended /ToS/facebook.json",
+      "tree": {
+        "sha": "8c6bba8664a61c26137c0b5cc4642c0cbef910ae",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/8c6bba8664a61c26137c0b5cc4642c0cbef910ae"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/11db4ae2fcbdf9f9153674c462e450b23d6c0f7f",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/11db4ae2fcbdf9f9153674c462e450b23d6c0f7f",
+    "html_url": "https://github.com/citizenme/Content/commit/11db4ae2fcbdf9f9153674c462e450b23d6c0f7f",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/11db4ae2fcbdf9f9153674c462e450b23d6c0f7f/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "206e7424eec72aa2f21ca4f1368efe7c5c5d0d03",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/206e7424eec72aa2f21ca4f1368efe7c5c5d0d03",
+        "html_url": "https://github.com/citizenme/Content/commit/206e7424eec72aa2f21ca4f1368efe7c5c5d0d03"
+      }
+    ]
+  },
+  {
+    "sha": "d120a00f3e1fe1ce44ef3ede3ab07080f1e3d6bc",
+    "commit": {
+      "author": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-01-20T14:58:38Z"
+      },
+      "committer": {
+        "name": "Morten Jensen",
+        "email": "morten@citizenme.com",
+        "date": "2014-01-20T14:58:38Z"
+      },
+      "message": "First cut",
+      "tree": {
+        "sha": "32eb83d4c0cc0e51ea9d831fee6b21fed2de6c2a",
+        "url": "https://api.github.com/repos/citizenme/Content/git/trees/32eb83d4c0cc0e51ea9d831fee6b21fed2de6c2a"
+      },
+      "url": "https://api.github.com/repos/citizenme/Content/git/commits/d120a00f3e1fe1ce44ef3ede3ab07080f1e3d6bc",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/citizenme/Content/commits/d120a00f3e1fe1ce44ef3ede3ab07080f1e3d6bc",
+    "html_url": "https://github.com/citizenme/Content/commit/d120a00f3e1fe1ce44ef3ede3ab07080f1e3d6bc",
+    "comments_url": "https://api.github.com/repos/citizenme/Content/commits/d120a00f3e1fe1ce44ef3ede3ab07080f1e3d6bc/comments",
+    "author": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jensenmo",
+      "id": 5285227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5285227?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jensenmo",
+      "html_url": "https://github.com/jensenmo",
+      "followers_url": "https://api.github.com/users/jensenmo/followers",
+      "following_url": "https://api.github.com/users/jensenmo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jensenmo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jensenmo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jensenmo/subscriptions",
+      "organizations_url": "https://api.github.com/users/jensenmo/orgs",
+      "repos_url": "https://api.github.com/users/jensenmo/repos",
+      "events_url": "https://api.github.com/users/jensenmo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jensenmo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "928ad8f463bdd2a4ada8a7a26b5d951a381c456b",
+        "url": "https://api.github.com/repos/citizenme/Content/commits/928ad8f463bdd2a4ada8a7a26b5d951a381c456b",
+        "html_url": "https://github.com/citizenme/Content/commit/928ad8f463bdd2a4ada8a7a26b5d951a381c456b"
+      }
+    ]
+  }
+]
