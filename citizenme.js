@@ -43,6 +43,16 @@
 						callback(data);
 					}
 				});
+			},
+			getServiceDetails : function(service,callback){
+				$.ajax({
+					url : "https://rawgit.com/cferretti/data-test/master/facebook.json",
+					dataType : 'json',
+					type : 'GET',
+					success : function(data){
+						callback(data);
+					}
+				});
 			}
 		}
 		
@@ -104,7 +114,12 @@
 					$('#btn_back').remove();
 					// _self.setRowsEvent(true);
 					// _self.setRowsEvent();
-					AwsToS.getServiceTotal($(this).val(), function(data){ _self.createData(data); });
+					var service = $(this).val();
+					AwsToS.getServiceTotal(service, function(data){ 
+						AwsToS.getServiceDetails(service, function(details){ 
+							_self.createData(data, details); 
+						} );
+					} );
 				});
 
 				dropdown.trigger('change');
@@ -131,7 +146,7 @@
 
 				this.elem.after(btn_back);
 			},
-			createData : function(data){
+			createData : function(data, details){
 				var converted_data = [];
 				this.data = [];
 				var can_be_displayed = false;
@@ -164,6 +179,23 @@
 					}
 
 					var index = service+revision;
+
+					var message = 'No message found';
+					var date_change = 'No date found';
+					if(revision !== ''){
+						var j = 0;
+						var founded = false;
+						do{
+							console.log(details[j].sha.substr(0,revision.length));
+							if(details[j].sha.substr(0,revision.length) === revision){
+								message = details[j].commit.message;
+								date_change = details[j].commit.author.date.substr(0,10);
+								founded = true;
+							}
+							j++;
+						}while(j < details.length && !founded);
+					}
+
 					if(can_be_displayed){
 						if(typeof(converted_data[index]) === 'undefined'){
 							var end_date = new Date(data[i].end_time*1000);
@@ -174,7 +206,9 @@
 								'unreasonable' : unreasonable_vote,
 								'reasonable' : reasonable_vote,
 								'end_time' : end_date.getUTCFullYear()+"/"+(end_date.getUTCMonth() + 1)+"/"+end_date.getUTCDate(),
-								"start_time" :  start_date.getUTCFullYear()+"/"+(start_date.getUTCMonth() + 1)+"/"+start_date.getUTCDate()
+								"start_time" :  start_date.getUTCFullYear()+"/"+(start_date.getUTCMonth() + 1)+"/"+start_date.getUTCDate(),
+								'message' : message,
+								'date_change' : date_change
 							};
 						}else{
 							if(type == down_vote){
@@ -273,7 +307,9 @@
 			            { "title": "Start Date", "data" : "start_time" },
 			            { "title": "End Date", "data" : "end_time" },
 			            { "title": "Reasonable","align":"right", "data" : "reasonable" },
-			            { "title": "Unreasonable","align":"right", "data" :"unreasonable"}
+			            { "title": "Unreasonable","align":"right", "data" :"unreasonable"},
+			            { "title": "Comment", "data" :"message"},
+			            { "title": "Date change", "data" :"date_change"},
 			        ],
 			        order: [[ 3, "desc" ]]
 				});
