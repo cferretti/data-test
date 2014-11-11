@@ -102,8 +102,8 @@
 				//add listener to dropdown
 				dropdown.on('change', function _changeServiceListener(event){
 					$('#btn_back').remove();
-					_self.setRowsEvent(true);
-					_self.setRowsEvent();
+					// _self.setRowsEvent(true);
+					// _self.setRowsEvent();
 					AwsToS.getServiceTotal($(this).val(), function(data){ _self.createData(data); });
 				});
 
@@ -121,7 +121,7 @@
 				}).text('Back');
 
 				var _self = this;
-				this.setRowsEvent(true);
+				// this.setRowsEvent(true);
 				btn_back.on('click', function(e){
 					e.preventDefault();
 					$('#dropdown_services').trigger('change');
@@ -164,16 +164,17 @@
 					}
 
 					var index = service+revision;
-
 					if(can_be_displayed){
-						if(converted_data.indexOf(index) === -1){
-							var date = new Date(data[i].start_time*1000);
+						if(typeof(converted_data[index]) === 'undefined'){
+							var end_date = new Date(data[i].end_time*1000);
+							var start_date = new Date(data[i].start_time*1000);
 							converted_data[index] = { 
 								'service' : service,
 								'rev' : revision,
 								'unreasonable' : unreasonable_vote,
 								'reasonable' : reasonable_vote,
-								'time' : date.getUTCFullYear()+"/"+(date.getUTCMonth() + 1)+"/"+date.getUTCDate()
+								'end_time' : end_date.getUTCFullYear()+"/"+(end_date.getUTCMonth() + 1)+"/"+end_date.getUTCDate(),
+								"start_time" :  start_date.getUTCFullYear()+"/"+(start_date.getUTCMonth() + 1)+"/"+start_date.getUTCDate()
 							};
 						}else{
 							if(type == down_vote){
@@ -217,7 +218,7 @@
 
 					var reasonable_vote = 0;
 					var unreasonable_vote = 0;
-
+					console.log(type, data[i]);
 					if(type == down_vote){
 						unreasonable_vote = data[i].count;
 					}else if(type == up_vote){
@@ -269,14 +270,15 @@
 			        columns: [
 			            { "title": "Service", "class":"service", "data" : "service" },
 			            { "title": "Revision", "class": "rev", "data" : "rev" },
-			            { "title": "Reasonable", "data" : "reasonable" },
-			            { "title": "Unreasonable", "data" :"unreasonable"},
-			            { "title": "Date", "data" : "time" }
+			            { "title": "Start Date", "data" : "start_time" },
+			            { "title": "End Date", "data" : "end_time" },
+			            { "title": "Reasonable","align":"right", "data" : "reasonable" },
+			            { "title": "Unreasonable","align":"right", "data" :"unreasonable"}
 			        ],
-			        order: [[ 4, "desc" ]]
+			        order: [[ 3, "desc" ]]
 				});
 
-				this.setRowsEvent();
+				// this.setRowsEvent();
 				
 			},
 			setRowsEvent : function(disabled){
