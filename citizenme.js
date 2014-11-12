@@ -26,7 +26,7 @@
 			services : [],
 			getServiceTotal : function(service, callback){
 				$.ajax({
-					url : "http://citizenme-tos-votes.s3.amazonaws.com/votes/"+service+"-total.json",
+					url : this.URL+"/votes/"+service+"-total.json",
 					dataType : 'json',
 					type : 'GET',
 					success : function(data){
@@ -36,7 +36,7 @@
 			},
 			getServicePoints : function(service, callback){
 				$.ajax({
-					url : "http://citizenme-tos-votes.s3.amazonaws.com/votes/"+service+"-points-total.json",
+					url : this.URL+"/votes/"+service+"-points-total.json",
 					dataType : 'json',
 					type : 'GET',
 					success : function(data){
@@ -46,7 +46,7 @@
 			},
 			getServiceDetails : function(service,callback){
 				$.ajax({
-					url : "https://rawgit.com/cferretti/data-test/master/facebook.json",
+					url : this.URL+"/git-history/"+service+".json",
 					dataType : 'json',
 					type : 'GET',
 					success : function(data){
