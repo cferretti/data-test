@@ -24,6 +24,17 @@
 		var AwsToS = {
 			URL : 'http://citizenme-tos-votes.s3.amazonaws.com',
 			services : [],
+			getServices : function(callback){
+				$.ajax({
+					url : "https://rawgit.com/cferretti/data-test/master/services.json",
+					type : "GET",
+					dataType : "json",
+					success: function(data){
+						this.services = data;
+						callback(data);
+					}
+				})
+			},
 			getServiceTotal : function(service, callback){
 				$.ajax({
 					url : this.URL+"/votes/"+service+"-total.json",
@@ -54,7 +65,7 @@
 					}
 				});
 			}
-		}
+		};
 		
 		var offsetService = 4;
 		var offsetVoteType = 3;
@@ -64,46 +75,22 @@
 
 		var tableGenerator = {
 			elem : null,
-			services : [
-				{
-					_id : 'facebook',
-					text : 'Facebook'
-				},
-				{
-					_id : 'twitter',
-					text : 'Twitter'
-				},
-				{
-					_id : 'flickr',
-					text : 'Flickr'
-				},
-				{
-					_id : 'google',
-					text : 'Google'
-				},
-				{
-					_id : 'linkedin',
-					text : 'LinkedIn'
-				},
-				{
-					_id : 'instagram',
-					text : 'Instagram'
-				},
-
-			],
 			data : [],
 			datatable : null,
 			init : function(elem){
 				this.elem = $(elem);
+				var _self = this;
 				this.initTable();
-				this.createDropdown();
+				AwsToS.getServices(function(data){
+					_self.createDropdown(data);
+				});
 			},
-			createDropdown : function(){
+			createDropdown : function(services){
 				var dropdown = $('<select></select>');
-				for(i in this.services){
+				for(i in services){
 					var option = $('<option></option>').attr(
-							{'value' : this.services[i]._id, id:'dropdown_services'}
-						).text(this.services[i].text);
+							{'value' : services[i].id, id:'dropdown_services'}
+						).text(services[i].name);
 
 					dropdown.append(option);
 				}
