@@ -1,0 +1,54 @@
+[
+  {
+    "name":"Facebook",
+    "id" : "facebook"
+  },
+  {
+    "name":"Twitter",
+    "id" : "twitter"
+  },
+  {
+    "name":"Citizenme",
+    "id" : "citizenme"
+  },
+    {
+    "name":"Duckduckgo",
+    "id" : "duckduckgo"
+  },
+  {
+    "name":"Flickr",
+    "id" : "flickr"
+  },
+  {
+    "name":"Foursquare",
+    "id" : "foursquare"
+  },
+    {
+    "name":"Google",
+    "id" : "google"
+  },
+  {
+    "name":"Instagram",
+    "id" : "instagram"
+  },
+  {
+    "name":"LinkedIn",
+    "id" : "linkedin"
+  },
+    {
+    "name":"Microsoft",
+    "id" : "microsoft"
+  },
+  {
+    "name":"Pinterest",
+    "id" : "pinterest"
+  },
+  {
+    "name":"Yahoo",
+    "id" : "yahoo"
+  },
+  {
+    "name":"YouTube",
+    "id" : "youtube"
+  }
+]
