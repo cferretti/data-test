@@ -388,6 +388,7 @@
 			            { "title": "Votes 'unreasonable'", "data" : "unreasonable" },
 			            { "title": "Votes 'resonable'","data" : "reasonable" }
 			        ],
+			        'iDisplayLength': 20,
 			        "fnRowCallback": function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
 			        	
 
