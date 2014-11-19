@@ -330,10 +330,9 @@
 							}
 						};
 						
-						var rank = 0;
 						if(typeof(points_data[index]) === 'undefined'){
 							points_data[index] = {
-								'rank' : rank,
+								'rank' : 0,
 								'service' : service,
 								'term' : term,
 								'term_id' : term_id,
@@ -347,8 +346,13 @@
 					}
 				}
 				
-				for(i in points_data){
+				points_data.sort(function(a,b) { return parseInt(a.unreasonable) - parseInt(b.unreasonable) } );
+
+				var rank = 1;
+				for(i in points_data){	
+					points_data[i].rank = rank;
 					this.data.push(points_data[i]);
+					rank++;
 				}
 
 				this.setData();
