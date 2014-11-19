@@ -55,7 +55,7 @@
 					dataType : 'json',
 					type : 'GET',
 					success : function(data){
-						callback(data);
+						callback(data, service);
 					}
 				});
 			},
@@ -66,13 +66,18 @@
 					for(i = 0; i < nb_serv; i++){
 						//If last services call the callback
 						if(i+1 >= nb_serv){
-							this.getServicePoints(services[i], function(){
-								datapoints[services[i]] = data;
+							AwsToS.getServicePoints(services[i], function(data,service){
+								if(data !== null){
+									console.log(service);
+									datapoints[service] = data;
+								}
 								callback(datapoints);
 							});
 						}else{
-							this.getServicePoints(services[i], function(data){
-								datapoints[services[i]] = data;
+							AwsToS.getServicePoints(services[i], function(data,service){
+								if(data !== null){
+									datapoints[service] = data;
+								}
 							});
 						} 
 					}
@@ -252,11 +257,14 @@
 				var _self = this;
 				this.initTable();
 				AwsToS.getServicesPoints(function(data){
-					this.createDataPoint(data);
+					console.log(data);
+					_self.createDataPoint(data);
 				});
 			},
 			createDataPoint : function(data){
 				var points_data = [];
+				this.data = [];
+
 				for(i in data){
 					var service = i;
 					var points = data[i];
@@ -265,13 +273,17 @@
 						var parts = points[j].name.split('/');
 						var type = parts[offsetVoteType + 1];
 
-						var details = parts[offsetService];
+						var details = parts[offsetService+1];
 						//Check if revision exit
 						var subparts = details.split('-');
 						var term_id = '';
 
 						if(typeof(subparts[1]) !== 'undefined' && subparts[1] !== ''){
 							term_id = subparts[1];
+							var nb_sub = subparts.length;
+							for(k = 2; k < nb_sub - 2; k++){
+								term_id += '-'+subparts[k];
+							}
 						}else if(!display_null){
 							can_be_displayed = false;
 						}
@@ -280,30 +292,35 @@
 						var reasonable_vote = 0;
 						var index = service+term_id;
 
-						if(typeof(points_data[index]) !== 'undefined'){
-							unreasonable_vote = points_data[index].unreasonable;
-							reasonable_vote = points_data[index].reasonable;
-						};
-
 						if(type == down_vote){
-							unreasonable_vote += data[i].count;
+							unreasonable_vote = parseInt(points[j].count);
 						}else if(type == up_vote){
-							reasonable_vote += data[i].count;
+							reasonable_vote = parseInt(points[j].count);
 						}
 
 						var term = 'Test';
 						var rank = 0;
-
-						points_data[index] = {
-							'rank' : rank,
-							'service' : service,
-							'term' : term,
-							'term_id' : term_id,
-							'unreasonable' : unreasonable_vote,
-							'reasonable' : reasonable_vote
-						};
+						if(typeof(points_data[index]) === 'undefined'){
+							points_data[index] = {
+								'rank' : rank,
+								'service' : service,
+								'term' : term,
+								'term_id' : term_id,
+								'unreasonable' : unreasonable_vote,
+								'reasonable' : reasonable_vote
+							};
+						}else{
+							points_data[index].unreasonable +=  unreasonable_vote;
+							points_data[index].reasonable += reasonable_vote;
+						}
 					}
 				}
+				
+				for(i in points_data){
+					this.data.push(points_data[i]);
+				}
+
+				this.setData();
 			},
 			initTable : function(){
 				this.datatable = this.elem.dataTable({
