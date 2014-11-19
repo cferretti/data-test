@@ -59,6 +59,25 @@
 					}
 				});
 			},
+			getServicesPoints : function(callback){
+				var datapoints = [];
+				this.getServices(function(services){
+					var nb_serv = services.length;
+					for(i = 0; i < nb_serv; i++){
+						//If last services call the callback
+						if(i+1 >= nb_serv){
+							this.getServicePoints(services[i], function(){
+								datapoints[services[i]] = data;
+								callback(datapoints);
+							});
+						}else{
+							this.getServicePoints(services[i], function(data){
+								datapoints[services[i]] = data;
+							});
+						} 
+					}
+				});
+			},
 			getServiceDetails : function(service,callback){
 				$.ajax({
 					url : this.URL+"/git-history/"+service+".json",
@@ -103,8 +122,6 @@
 				//add listener to dropdown
 				dropdown.on('change', function _changeServiceListener(event){
 					$('#btn_back').remove();
-					// _self.setRowsEvent(true);
-					// _self.setRowsEvent();
 					var service = $(this).val();
 					AwsToS.getServiceTotal(service, function(data){ 
 						AwsToS.getServiceDetails(service, function(details){ 
@@ -115,27 +132,6 @@
 
 				dropdown.trigger('change');
 				this.elem.before(dropdown);
-			},
-			createBackBtn : function(){
-				if($('#btn_back').length > 0){
-					$('#btn_back').remove();
-				}
-
-				var btn_back = $('<button></button>');
-				btn_back.attr({
-					id : 'btn_back'
-				}).text('Back');
-
-				var _self = this;
-				// this.setRowsEvent(true);
-				btn_back.on('click', function(e){
-					e.preventDefault();
-					$('#dropdown_services').trigger('change');
-					_self.setRowsEvent();
-					this.remove();
-				});
-
-				this.elem.after(btn_back);
 			},
 			createData : function(data, details){
 				var converted_data = [];
@@ -218,76 +214,6 @@
 
 				this.setData();
 			},
-			createDataPoint : function(data, rev){
-				var converted_data = [];
-				this.data = [];
-				var can_be_displayed = false;
-				for(i in data){
-					can_be_displayed = true;
-					//Get part of the string
-					var parts = data[i].name.split('/');
-					var service = parts[offsetService+1];
-					var type = parts[offsetVoteType+1];
-					//Check if revision exit
-					var subparts = service.split('-');
-					var revision = '';
-					if(typeof(subparts[1]) !== 'undefined' && subparts[1] !== ''){
-						revision = subparts[1];
-					}else if(!display_null){
-						can_be_displayed = false;
-					}
-
-					if(typeof(subparts[1]) !== 'undefined'){
-						service = subparts[0];
-					}
-
-					var reasonable_vote = 0;
-					var unreasonable_vote = 0;
-					console.log(type, data[i]);
-					if(type == down_vote){
-						unreasonable_vote = data[i].count;
-					}else if(type == up_vote){
-						reasonable_vote = data[i].count;
-					}
-
-					if(subparts[2] !== rev){
-						can_be_displayed = false;
-					}
-
-					var index = service+revision;
-
-					if(can_be_displayed){
-						if(converted_data.indexOf(index) === -1){
-							var date = new Date(data[i].start_time*1000);
-							converted_data[index] = { 
-								'service' : service,
-								'rev' : revision,
-								'unreasonable' : unreasonable_vote,
-								'reasonable' : reasonable_vote,
-								'time' : date.getUTCFullYear()+"/"+(date.getUTCMonth() + 1)+"/"+date.getUTCDate()
-							};
-						}else{
-							if(type == down_vote){
-								converted_data[index].unreasonable = unreasonable_vote;
-							}else if(type == up_vote){
-								converted_data[index].reasonable = reasonable_vote;
-							}
-						}
-					}
-
-				}
-
-				for(i in converted_data){
-					this.data.push(converted_data[i]);
-				}
-
-				if(this.data.length > 0){
-					this.setData();
-					this.createBackBtn();
-				}else{
-					alert('No details');
-				}
-			},
 			initTable : function(){
 				this.datatable = this.elem.dataTable({
 					data: this.data,
@@ -304,28 +230,95 @@
 			        ],
 			        order: [[ 3, "desc" ]]
 				});
-
-				// this.setRowsEvent();
 				
 			},
-			setRowsEvent : function(disabled){
-				var _self = this;
-				//By default put as enabled
-				if(typeof(disabled) === 'undefined'){
-					disabled = false;
-				}
+			setData : function(){
+				if(this.data.length > 0){
+					this.datatable.fnClearTable();
+			        this.datatable.fnAddData(this.data);
+			        this.datatable.fnAdjustColumnSizing();
+			    }
+			}
+		};
 
-				var tbody = this.elem.find('tbody');
-				if(!disabled){
-					tbody.on( 'click', 'tr', function () {
-						var rev = $(this).find('.rev').text()
-						var service = $(this).find('.service').text()
-						AwsToS.getServicePoints(service, function(data){ _self.createDataPoint(data, rev); });
-					});
-				}else{
-					//Disabled event
-					tbody.off( 'click', 'tr');
+
+
+		var tableGeneratorPoint = {
+			elem : null,
+			data : [],
+			datatable : null,
+			init : function(elem){
+				this.elem = $(elem);
+				var _self = this;
+				this.initTable();
+				AwsToS.getServicesPoints(function(data){
+					this.createDataPoint(data);
+				});
+			},
+			createDataPoint : function(data){
+				var points_data = [];
+				for(i in data){
+					var service = i;
+					var points = data[i];
+					for(j in points){
+						//{"name":"event/tos/takeaction/point/reasonablechange/facebook-E58aPtzP3jk-(null)-(null)","count":"1","start_time":"","end_time":""}
+						var parts = points[j].name.split('/');
+						var type = parts[offsetVoteType + 1];
+
+						var details = parts[offsetService];
+						//Check if revision exit
+						var subparts = details.split('-');
+						var term_id = '';
+
+						if(typeof(subparts[1]) !== 'undefined' && subparts[1] !== ''){
+							term_id = subparts[1];
+						}else if(!display_null){
+							can_be_displayed = false;
+						}
+
+						var unreasonable_vote = 0;
+						var reasonable_vote = 0;
+						var index = service+term_id;
+
+						if(typeof(points_data[index]) !== 'undefined'){
+							unreasonable_vote = points_data[index].unreasonable;
+							reasonable_vote = points_data[index].reasonable;
+						};
+
+						if(type == down_vote){
+							unreasonable_vote += data[i].count;
+						}else if(type == up_vote){
+							reasonable_vote += data[i].count;
+						}
+
+						var term = 'Test';
+						var rank = 0;
+
+						points_data[index] = {
+							'rank' : rank,
+							'service' : service,
+							'term' : term,
+							'term_id' : term_id,
+							'unreasonable' : unreasonable_vote,
+							'reasonable' : reasonable_vote
+						};
+					}
 				}
+			},
+			initTable : function(){
+				this.datatable = this.elem.dataTable({
+					data: this.data,
+					sDom : 'rtpli',
+			        columns: [
+			            { "title": "Rank", "class":"service", "data" : "rank" },
+			            { "title": "Service", "class": "rev", "data" : "service" },
+			            { "title": "Term", "data" : "term" },
+			            { "title": "Id Term", "data" : "term_id" },
+			            { "title": "Votes 'unreasonable'", "data" : "unreasonable" },
+			            { "title": "Votes 'resonable'","data" : "reasonable" }
+			        ],
+			        order: [[ 0, "asc" ]]
+				});
 			},
 			setData : function(){
 				if(this.data.length > 0){
@@ -348,6 +341,22 @@
 			return this;  
 		}; 
 
-		$('#test').citizenTable();
+
+		$.fn.citizenTablePoint = function(options) {  
+			var config = {}; 
+			var defaults = $.extend(defaults, options);
+
+			this.each(function() {
+				tableGeneratorPoint.init(this);
+			});
+
+			return this;  
+		}; 
+
+		if($('#test').length > 0){
+			$('#test').citizenTable();
+		}else if($('#table-point-votes').length > 0){
+			$('#table-point-votes').citizenTablePoint();
+		}
 	});
 })(jQuery);
