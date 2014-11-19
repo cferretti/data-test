@@ -246,6 +246,7 @@
 			            { "title": "Comment", "data" :"message"},
 			            { "title": "Date change", "data" :"date_change"},
 			        ],
+			        'iDisplayLength': 20,
 			        order: [[ 3, "desc" ]]
 				});
 				
