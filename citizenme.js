@@ -28,6 +28,7 @@
 		var AwsToS = {
 			URL : 'http://citizenme-tos-votes.s3.amazonaws.com',
 			services : [],
+			terms_of_services : [],
 			getServices : function(callback){
 				$.ajax({
 					url : this.URL+"/tos-services.json",
@@ -90,6 +91,18 @@
 					type : 'GET',
 					success : function(data){
 						callback(data);
+					}
+				});
+			},
+			getServiceTos : function(service, callback){
+				var _self = this;
+				$.ajax({
+					url : this.URL+"/ToS/"+service+".json",
+					dataType : 'json',
+					type : 'GET',
+					success : function(data){
+						_self.terms_of_services[service] = data.points;
+						callback();
 					}
 				});
 			}
@@ -256,10 +269,22 @@
 				this.elem = $(elem);
 				var _self = this;
 				this.initTable();
-				AwsToS.getServicesPoints(function(data){
-					console.log(data);
-					_self.createDataPoint(data);
-				});
+				AwsToS.getServices(function(services){
+					var nb_services = services.length;
+					for(i = 0; i < nb_services; i++){
+						if(i + 1 >= nb_services){
+							AwsToS.getServiceTos(services[i], function(){
+								AwsToS.getServicesPoints(function(data){
+									console.log(AwsToS.terms_of_services);
+									_self.createDataPoint(data);
+								});
+							})
+						}else{
+							AwsToS.getServiceTos(services[i], function(){});	
+						}	
+					}	
+				})
+				
 			},
 			createDataPoint : function(data){
 				var points_data = [];
@@ -298,7 +323,13 @@
 							reasonable_vote = parseInt(points[j].count);
 						}
 
-						var term = 'Test';
+						var term = 'Not found';
+						for(k in AwsToS.terms_of_services[service]){
+							if(AwsToS.terms_of_services[service][k].id === term_id){
+								term = AwsToS.terms_of_services[service][k].title;
+							}
+						};
+						
 						var rank = 0;
 						if(typeof(points_data[index]) === 'undefined'){
 							points_data[index] = {
