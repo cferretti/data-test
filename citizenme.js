@@ -261,7 +261,12 @@
 
 
 
+
+
 		var tableGeneratorPoint = {
+			red: "#af0500",
+			amber: "#af6800",
+			green: "#0e7f00",
 			elem : null,
 			data : [],
 			datatable : null,
@@ -324,14 +329,20 @@
 						}
 
 						var term = 'Not found';
+						var point = "";
+						var score = 0;
 						for(k in AwsToS.terms_of_services[service]){
 							if(AwsToS.terms_of_services[service][k].id === term_id){
 								term = AwsToS.terms_of_services[service][k].title;
+								point = AwsToS.terms_of_services[service][k].tosdr.point;
+								score = AwsToS.terms_of_services[service][k].tosdr.score;
 							}
 						};
 						
 						if(typeof(points_data[index]) === 'undefined'){
 							points_data[index] = {
+								"point" : point,
+								"score" : score,
 								'rank' : 0,
 								'service' : service,
 								'term' : term,
@@ -368,6 +379,8 @@
 					data: this.data,
 					sDom : 'rtpli',
 			        columns: [
+			        	{ "title": "", "data" : "point" , "visible": false,"searchable": false},
+			        	{ "title": "", "data" : "score" , "visible": false, "searchable": false},
 			            { "title": "Rank", "class":"service", "data" : "rank" },
 			            { "title": "Service", "class": "rev", "data" : "service" },
 			            { "title": "Term", "data" : "term" },
@@ -375,7 +388,25 @@
 			            { "title": "Votes 'unreasonable'", "data" : "unreasonable" },
 			            { "title": "Votes 'resonable'","data" : "reasonable" }
 			        ],
-			        order: [[ 0, "asc" ]]
+			        "fnRowCallback": function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
+			        	
+
+			            if ( aData.point.toLowerCase() === "good" && aData.score > 20 )
+			            {
+			                $('td:eq(2)', nRow).css({ "background" : tableGeneratorPoint.green } );
+			            }
+
+			            if ( aData.point.toLowerCase() === "bad" && aData.score > 20 )
+			            {
+			                $('td:eq(2)', nRow).css({ "background" : tableGeneratorPoint.red } );
+			            }
+
+			            if ( aData.point.toLowerCase() === "blocker")
+			            {
+			                $('td:eq(2)', nRow).css({ "background" : tableGeneratorPoint.amber } );
+			            }
+			        },
+			        order: [[ 2, "asc" ]]
 				});
 			},
 			setData : function(){
