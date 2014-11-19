@@ -1,6 +1,10 @@
 (function($) {
 	$(document).ready(function(){
 
+		String.prototype.capitalize = function() {
+		    return this.charAt(0).toUpperCase() + this.slice(1);
+		}
+
 		function nodeToObject(node) {
 		    var obj = {}, i;
 		    obj.nodeType = node.nodeType;
@@ -26,7 +30,7 @@
 			services : [],
 			getServices : function(callback){
 				$.ajax({
-					url : "https://rawgit.com/cferretti/data-test/master/services.json",
+					url : this.URL+"/tos-services.json",
 					type : "GET",
 					dataType : "json",
 					success: function(data){
@@ -89,8 +93,8 @@
 				var dropdown = $('<select></select>');
 				for(i in services){
 					var option = $('<option></option>').attr(
-							{'value' : services[i].id, id:'dropdown_services'}
-						).text(services[i].name);
+							{'value' : services[i]d, id:'dropdown_services'}
+						).text(services[i].capitalize());
 
 					dropdown.append(option);
 				}
