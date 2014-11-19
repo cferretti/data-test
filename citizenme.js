@@ -93,7 +93,7 @@
 				var dropdown = $('<select></select>');
 				for(i in services){
 					var option = $('<option></option>').attr(
-							{'value' : services[i]d, id:'dropdown_services'}
+							{'value' : services[i], id:'dropdown_services'}
 						).text(services[i].capitalize());
 
 					dropdown.append(option);
