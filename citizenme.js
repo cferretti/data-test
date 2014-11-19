@@ -345,13 +345,19 @@
 						}
 					}
 				}
-				
-				points_data.sort(function(a,b) { return parseInt(a.unreasonable) - parseInt(b.unreasonable) } );
+
+
+				for(i in points_data){	
+					this.data.push(points_data[i]);
+				}
+
+				this.data.sort(function(a,b) {
+					return parseInt(b.unreasonable) - parseInt(a.unreasonable); 
+				} );
 
 				var rank = 1;
-				for(i in points_data){	
-					points_data[i].rank = rank;
-					this.data.push(points_data[i]);
+				for(i in this.data){	
+					this.data[i].rank = rank;
 					rank++;
 				}
 
