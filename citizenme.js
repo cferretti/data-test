@@ -29,6 +29,23 @@
 			URL : 'http://citizenme-tos-votes.s3.amazonaws.com',
 			services : [],
 			terms_of_services : [],
+			getTotalVotes : function(callback){
+				$.ajax({
+					url : this.URL+"/votes/votes-total.json",
+					type : "GET",
+					dataType : "json",
+					success: function(data){
+						var total = 0;
+						for(i in data){
+							if(data[i].name === "event/tos/takeaction/unreasonablechange" || data[i].name === "event/tos/takeaction/reasonablechange"){
+								total += parseInt(data[i].count);
+							}
+						}
+
+						callback(total);
+					}
+				});
+			},
 			getServices : function(callback){
 				$.ajax({
 					url : this.URL+"/tos-services.json",
@@ -38,7 +55,7 @@
 						this.services = data;
 						callback(data);
 					}
-				})
+				});
 			},
 			getServiceTotal : function(service, callback){
 				$.ajax({
@@ -246,7 +263,6 @@
 			            { "title": "Comment", "data" :"message"},
 			            { "title": "Date change", "data" :"date_change"},
 			        ],
-			        'iDisplayLength': 20,
 			        order: [[ 3, "desc" ]]
 				});
 				
@@ -275,6 +291,11 @@
 				this.elem = $(elem);
 				var _self = this;
 				this.initTable();
+
+				AwsToS.getTotalVotes(function(total){
+					_self.sumTotal(total);
+				})
+
 				AwsToS.getServices(function(services){
 					var nb_services = services.length;
 					for(i = 0; i < nb_services; i++){
@@ -291,6 +312,10 @@
 					}	
 				})
 				
+			},
+			sumTotal : function(total){
+				var p = $('<p></p>').html('Total service votes to date: '+total);
+				this.elem.before(p);
 			},
 			createDataPoint : function(data){
 				var points_data = [];
@@ -387,7 +412,7 @@
 			            { "title": "Term", "data" : "term" },
 			            { "title": "Id Term", "data" : "term_id" },
 			            { "title": "Votes 'unreasonable'", "data" : "unreasonable" },
-			            { "title": "Votes 'resonable'","data" : "reasonable" }
+			            { "title": "Votes 'resonable'","data" : "reasonable" },
 			        ],
 			        'iDisplayLength': 20,
 			        "fnRowCallback": function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
