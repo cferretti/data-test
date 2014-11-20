@@ -426,16 +426,14 @@
 			            if ( aData.point.toLowerCase() === "good" && aData.score > 20 )
 			            {
 			                $('td:eq(2)', nRow).css({ "background" : tableGeneratorPoint.green } );
-			            }
-
-			            if ( aData.point.toLowerCase() === "bad" && aData.score > 20 )
+			            }else if ( aData.point.toLowerCase() === "bad" && aData.score > 20 )
 			            {
 			                $('td:eq(2)', nRow).css({ "background" : tableGeneratorPoint.red } );
-			            }
-
-			            if ( aData.point.toLowerCase() === "blocker")
+			            }else if ( aData.point.toLowerCase() === "blocker")
 			            {
 			                $('td:eq(2)', nRow).css({ "background" : tableGeneratorPoint.amber } );
+			            }else{
+			            	$('td:eq(2)', nRow).css({ "background" : tableGeneratorPoint.amber } );
 			            }
 			        },
 			        order: [[ 2, "asc" ]]
