@@ -320,11 +320,14 @@
 			createDataPoint : function(data){
 				var points_data = [];
 				this.data = [];
+				var can_be_displayed = true;
+				var display_null = false;
 
 				for(i in data){
 					var service = i;
 					var points = data[i];
 					for(j in points){
+						can_be_displayed = true;
 						//{"name":"event/tos/takeaction/point/reasonablechange/facebook-E58aPtzP3jk-(null)-(null)","count":"1","start_time":"","end_time":""}
 						var parts = points[j].name.split('/');
 						var type = parts[offsetVoteType + 1];
@@ -334,7 +337,7 @@
 						var subparts = details.split('-');
 						var term_id = '';
 
-						if(typeof(subparts[1]) !== 'undefined' && subparts[1] !== ''){
+						if(typeof(subparts[1]) !== 'undefined' && subparts[1] !== ''  && subparts[1] !== '(null)'){
 							term_id = subparts[1];
 							var nb_sub = subparts.length;
 							for(k = 2; k < nb_sub - 2; k++){
@@ -344,41 +347,43 @@
 							can_be_displayed = false;
 						}
 
-						var unreasonable_vote = 0;
-						var reasonable_vote = 0;
-						var index = service+term_id;
+						if(can_be_displayed){
+							var unreasonable_vote = 0;
+							var reasonable_vote = 0;
+							var index = service+term_id;
 
-						if(type == down_vote){
-							unreasonable_vote = parseInt(points[j].count);
-						}else if(type == up_vote){
-							reasonable_vote = parseInt(points[j].count);
-						}
-
-						var term = 'Not found';
-						var point = "";
-						var score = 0;
-						for(k in AwsToS.terms_of_services[service]){
-							if(AwsToS.terms_of_services[service][k].id === term_id){
-								term = AwsToS.terms_of_services[service][k].title;
-								point = AwsToS.terms_of_services[service][k].tosdr.point;
-								score = AwsToS.terms_of_services[service][k].tosdr.score;
+							if(type == down_vote){
+								unreasonable_vote = parseInt(points[j].count);
+							}else if(type == up_vote){
+								reasonable_vote = parseInt(points[j].count);
 							}
-						};
-						
-						if(typeof(points_data[index]) === 'undefined'){
-							points_data[index] = {
-								"point" : point,
-								"score" : score,
-								'rank' : 0,
-								'service' : service,
-								'term' : term,
-								'term_id' : term_id,
-								'unreasonable' : unreasonable_vote,
-								'reasonable' : reasonable_vote
+
+							var term = "Not found";
+							var point = "";
+							var score = 0;
+							for(k in AwsToS.terms_of_services[service]){
+								if(AwsToS.terms_of_services[service][k].id === term_id){
+									term = AwsToS.terms_of_services[service][k].title;
+									point = AwsToS.terms_of_services[service][k].tosdr.point;
+									score = AwsToS.terms_of_services[service][k].tosdr.score;
+								}
 							};
-						}else{
-							points_data[index].unreasonable +=  unreasonable_vote;
-							points_data[index].reasonable += reasonable_vote;
+
+							if(typeof(points_data[index]) === 'undefined'){
+								points_data[index] = {
+									"point" : point,
+									"score" : score,
+									'rank' : 0,
+									'service' : service,
+									'term' : term,
+									'term_id' : term_id,
+									'unreasonable' : unreasonable_vote,
+									'reasonable' : reasonable_vote
+								};
+							}else{
+								points_data[index].unreasonable +=  unreasonable_vote;
+								points_data[index].reasonable += reasonable_vote;
+							}
 						}
 					}
 				}
