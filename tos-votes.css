@@ -6,11 +6,14 @@ table#table-point-votes, table#table-point-votes tr, table#table-point-votes td,
 	border: 1px solid #dcdcdc;
 }
 
+table#table-point-votes tr{
+	background-color: #fff;
+}
+
 table#table-point-votes td,table#table-point-votes th{
 	padding-left : 20px;
 	padding-right : 20px;
 	text-align: left;
-	background-color : #ffffff;
 }
 
 table#table-point-votes th:hover,table#table-point-votes th:active{
