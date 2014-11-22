@@ -406,7 +406,7 @@
 			        columns: [
 			        	{ "title": "", "data" : "point" , "visible": false,"searchable": false},
 			        	{ "title": "", "data" : "score" , "visible": false, "searchable": false},
-			            { "title": "Rank", "class":"service","width":"120px", "data" : "rank" },
+			            { "title": "Rank", "class":"service","width":"140px", "data" : "rank" },
 			            { "title": "Service", "class": "rev", "data" : "service" },
 			            { "title": "Term", "data" : "term" },
 			            { "title" : "Votes", "width":"170px", "render" : function(data, type,full){
