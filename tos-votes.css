@@ -62,13 +62,13 @@ tr.red,tr.amber,tr.green{
 }
 
 tr.red:hover{
-	background-color:rgba(255, 58, 48, 0.1);
+	background-color:rgba(255, 58, 48, 0.1) !important;
 }
 
 tr.amber:hover{
-	background-color:rgba(255, 149, 0, 0.1);
+	background-color:rgba(255, 149, 0, 0.1) !important;
 }
 
 tr.green:hover{
-	background-color:rgba(76, 217, 100, 0.1);
+	background-color:rgba(76, 217, 100, 0.1) !important;
 }
