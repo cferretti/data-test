@@ -1,3 +1,16 @@
+table#table-point-votes{
+	border-collapse: collapse;
+}
+
+table#table-point-votes, table#table-point-votes tr, table#table-point-votes td, table#table-point-votes th{
+	border: 1px solid #9ca49d;
+}
+
+table#table-point-votes td,table#table-point-votes th{
+	padding-left : 20px;
+	padding-left : 20px;
+}
+
 .votes-up{
 	float : left;
 	color : #4CD964;
@@ -28,7 +41,6 @@
 	amber : #af6800 : rgba(175, 104, 0, 1);
 */
 .rollover-color{
-	padding-left: 2% !important;
 	background-size: 200% 100%;
 	-webkit-transition: background-position 0.3s ease-out; /* For Safari 3.1 to 6.0 */
     transition: background-position 0.3s ease-out;
