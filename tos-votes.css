@@ -23,7 +23,7 @@
 	amber : #af6800 : rgba(175, 104, 0, 1);
 */
 .rollover-color{
-	padding-left: 2%;
+	padding-left: 4%;
 	background-size: 200% 100%;
 	-webkit-transition: background-position 2s; /* For Safari 3.1 to 6.0 */
     transition: background-position 2s;
