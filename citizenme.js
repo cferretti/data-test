@@ -409,7 +409,7 @@
 			            { "title": "Rank", "class":"service", "data" : "rank" },
 			            { "title": "Service", "class": "rev", "data" : "service" },
 			            { "title": "Term", "data" : "term" },
-			            { "title" : "Votes", "render" : function(data, type,full){
+			            { "title" : "Votes", "width":"170px", "render" : function(data, type,full){
 			            	return "<span class='votes-up'>"+full.reasonable + "</span><span class='votes-down'>"+full.unreasonable + "</span><span class='votes-total'>"+(parseInt(full.reasonable)+parseInt(full.unreasonable)) + " votes</span>"; 
 			            }}
 			        ],
