@@ -404,9 +404,9 @@
 					sDom : 'rtpl',
 					"paging":   false,
 			        columns: [
-			        	{ "title": "", "data" : "point" ,"width":"90px", "visible": false,"searchable": false},
+			        	{ "title": "", "data" : "point" , "visible": false,"searchable": false},
 			        	{ "title": "", "data" : "score" , "visible": false, "searchable": false},
-			            { "title": "Rank", "class":"service", "data" : "rank" },
+			            { "title": "Rank", "class":"service","width":"90px", "data" : "rank" },
 			            { "title": "Service", "class": "rev", "data" : "service" },
 			            { "title": "Term", "data" : "term" },
 			            { "title" : "Votes", "width":"170px", "render" : function(data, type,full){
