@@ -3,18 +3,26 @@ table#table-point-votes{
 }
 
 table#table-point-votes, table#table-point-votes tr, table#table-point-votes td, table#table-point-votes th{
-	border: 1px solid #DDDDDD;
+	border: 1px solid #dcdcdc;
 }
 
 table#table-point-votes td,table#table-point-votes th{
 	padding-left : 20px;
 	padding-right : 20px;
 	text-align: left;
+	background : #dcdcdc;
+}
+
+table#table-point-votes th:hover,table#table-point-votes th:active{
+	background: #f2f2f2 !important;
+	color : #000 !important;
 }
 
 .votes-up{
-	float : left;
+	float:left;
+	width : 50%;
 	color : #4CD964;
+	line-height : 26px;
 }
 
 .votes-up:before{
@@ -23,7 +31,9 @@ table#table-point-votes td,table#table-point-votes th{
 
 .votes-down{
 	float:right;
+	width : 50%;
 	color : #FF3A30;
+	line-height : 26px;
 }
 
 .votes-down:before{
@@ -34,6 +44,8 @@ table#table-point-votes td,table#table-point-votes th{
 	display : block;
 	float : none;
 	color : #9ca49d;
+	font-size : 14px;
+  	line-height : 26px;
 }
 
 /*
@@ -87,16 +99,19 @@ tr.green:hover{
 }
 
 p#votes-total-count {
-	color: #00ACED;
-	font-size: 2.5em;
-	font-weight: bold;
-	border-bottom: 1px solid #ddd;
+  font-family : "Montserrat";
+  font-size : 60px;
+  color : #00ACED;
+  color : rgb(0, 172, 237);
+  border-bottom : 1px solid #e5e5e5;
 }
 
 p.votes-total-text {
-	color: #00ACED;
-	font-size: 1.2em;
-	font-weight: bold;
+  font-family : "Montserrat";
+  font-size : 22px;
+  line-height : 26px;
+  color : #00ACED;
+  color : rgb(0, 172, 237);
 }
 
 .tos-votes-description p{
