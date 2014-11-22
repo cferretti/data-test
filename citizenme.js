@@ -289,10 +289,6 @@
 				var _self = this;
 				this.initTable();
 
-				AwsToS.getTotalVotes(function(total){
-					_self.sumTotal(total);
-				})
-
 				AwsToS.getServices(function(services){
 					var nb_services = services.length;
 					for(i = 0; i < nb_services; i++){
@@ -477,6 +473,12 @@
 			$('#test').citizenTable();
 		}else if($('#table-point-votes').length > 0){
 			$('#table-point-votes').citizenTablePoint();
+		}
+
+		if($('#votes-total-count').length > 0){
+			AwsToS.getTotalVotes(function(total){
+				$('#votes-total-count').html(total);
+			});
 		}
 	});
 })(jQuery);
