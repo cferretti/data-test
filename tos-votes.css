@@ -10,7 +10,7 @@ table#table-point-votes td,table#table-point-votes th{
 	padding-left : 20px;
 	padding-right : 20px;
 	text-align: left;
-	background : #dcdcdc;
+	background : #fff;
 }
 
 table#table-point-votes th:hover,table#table-point-votes th:active{
