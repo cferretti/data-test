@@ -84,3 +84,20 @@ tr.amber:hover{
 tr.green:hover{
 	background-color:rgba(76, 217, 100, 0.1) !important;
 }
+
+p#votes-total-count {
+	color: #00ACED;
+	font-size: 2.5em;
+	font-weight: bold;
+	border-bottom: 1px solid #ddd;
+}
+
+p.votes-total-text {
+	color: #00ACED;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.tos-votes-description p{
+	font-weight: bold;
+}
