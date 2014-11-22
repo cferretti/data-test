@@ -9,6 +9,7 @@ table#table-point-votes, table#table-point-votes tr, table#table-point-votes td,
 table#table-point-votes td,table#table-point-votes th{
 	padding-left : 20px;
 	padding-right : 20px;
+	text-align: left;
 }
 
 .votes-up{
