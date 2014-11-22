@@ -1,0 +1,53 @@
+.votes-up{
+	color : green;
+}
+
+.votes-up:before{
+	content : url(https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-thumbsup.png);
+}
+
+.votes-down{
+	color : red;
+}
+
+.votes-down:before{
+	content : url(https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-thumbsdown.png);
+}
+.votes-total{
+	color : #777;
+}
+
+/*
+	red : #af0500 : rgba(175, 5, 0, 1);
+	green : #0e7f00 : rgba(14, 127, 0, 1);
+	amber : #af6800 : rgba(175, 104, 0, 1);
+*/
+.rollover-color{
+	padding-left: 2%;
+	background-size: 200% 100%;
+	-webkit-transition: background-position 2s; /* For Safari 3.1 to 6.0 */
+    transition: background-position 2s;
+}
+
+.rollover-color.red{
+	background-position: -2% 0%;
+	background-image : linear-gradient(to left, rgba(175, 5, 0, 1) 50%, rgba(0, 0, 0, 0) 50%);;
+
+}
+
+.rollover-color.green{
+	background-position: -2% 0%;
+	background-image : linear-gradient(to left, rgba(14, 127, 0, 1) 50%, rgba(0, 0, 0, 0) 50%);;
+
+}
+
+.rollover-color.amber{
+	background-position: -2% 0%;
+	background-image : linear-gradient(to left, rgba(175, 104, 0, 1) 50%, rgba(0, 0, 0, 0) 50%);;
+
+}
+
+.rollover-color:hover{
+	background-position: -100% 0%;
+
+}

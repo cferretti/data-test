@@ -281,9 +281,6 @@
 
 
 		var tableGeneratorPoint = {
-			red: "#af0500",
-			amber: "#af6800",
-			green: "#0e7f00",
 			elem : null,
 			data : [],
 			datatable : null,
@@ -408,32 +405,33 @@
 			initTable : function(){
 				this.datatable = this.elem.dataTable({
 					data: this.data,
-					sDom : 'rtpli',
+					sDom : 'rtpl',
+					"paging":   false,
 			        columns: [
 			        	{ "title": "", "data" : "point" , "visible": false,"searchable": false},
 			        	{ "title": "", "data" : "score" , "visible": false, "searchable": false},
 			            { "title": "Rank", "class":"service", "data" : "rank" },
 			            { "title": "Service", "class": "rev", "data" : "service" },
 			            { "title": "Term", "data" : "term" },
-			            { "title": "Id Term", "data" : "term_id" },
-			            { "title": "Votes 'unreasonable'", "data" : "unreasonable" },
-			            { "title": "Votes 'resonable'","data" : "reasonable" },
+			            { "title" : "Votes", "render" : function(data, type,full){
+			            	return "<span class='votes-up'>"+full.reasonable + "</span><span class='votes-down'>"+full.unreasonable + "</span><span class='votes-total'>"+(parseInt(full.reasonable)+parseInt(full.unreasonable)) + " votes</span>"; 
+			            }}
 			        ],
-			        'iDisplayLength': 20,
 			        "fnRowCallback": function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
 			        	
-
+			        	$('td:eq(2)', nRow).addClass('rollover-color');
 			            if ( aData.point.toLowerCase() === "good" && aData.score > 20 )
 			            {
-			                $('td:eq(2)', nRow).css({ "background" : tableGeneratorPoint.green } );
+			                $('td:eq(2)', nRow).addClass('green');
 			            }else if ( aData.point.toLowerCase() === "bad" && aData.score > 20 )
 			            {
-			                $('td:eq(2)', nRow).css({ "background" : tableGeneratorPoint.red } );
+			                $('td:eq(2)', nRow).addClass('red');
 			            }else if ( aData.point.toLowerCase() === "blocker")
 			            {
-			                $('td:eq(2)', nRow).css({ "background" : tableGeneratorPoint.amber } );
-			            }else{
-			            	$('td:eq(2)', nRow).css({ "background" : tableGeneratorPoint.amber } );
+			                $('td:eq(2)', nRow).addClass('amber');
+			            }else
+			            {
+			                $('td:eq(2)', nRow).addClass('amber');
 			            }
 			        },
 			        order: [[ 2, "asc" ]]
