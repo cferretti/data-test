@@ -1,4 +1,5 @@
 .votes-up{
+	float : left;
 	color : green;
 }
 
@@ -7,6 +8,7 @@
 }
 
 .votes-down{
+	float:right;
 	color : red;
 }
 
@@ -14,6 +16,7 @@
 	content : url(https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-thumbsdown.png);
 }
 .votes-total{
+	clear : both;
 	color : #777;
 }
 
@@ -23,7 +26,7 @@
 	amber : #af6800 : rgba(175, 104, 0, 1);
 */
 .rollover-color{
-	padding-left: 4% !important;
+	padding-left: 2% !important;
 	background-size: 200% 100%;
 	-webkit-transition: background-position 2s; /* For Safari 3.1 to 6.0 */
     transition: background-position 2s;
