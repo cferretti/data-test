@@ -341,16 +341,6 @@
 						}
 
 						if(can_be_displayed){
-							var unreasonable_vote = 0;
-							var reasonable_vote = 0;
-							var index = service+term_id;
-
-							if(type == down_vote){
-								unreasonable_vote = parseInt(points[j].count);
-							}else if(type == up_vote){
-								reasonable_vote = parseInt(points[j].count);
-							}
-
 							var term = "Not found";
 							var point = "";
 							var score = 0;
@@ -361,6 +351,22 @@
 									score = AwsToS.terms_of_services[service][k].tosdr.score;
 								}
 							};
+
+							if(term === "Not found"){
+								can_be_displayed = false;							
+							}
+						}
+
+						if(can_be_displayed){
+							var unreasonable_vote = 0;
+							var reasonable_vote = 0;
+							var index = service+term_id;
+
+							if(type == down_vote){
+								unreasonable_vote = parseInt(points[j].count);
+							}else if(type == up_vote){
+								reasonable_vote = parseInt(points[j].count);
+							}
 
 							if(typeof(points_data[index]) === 'undefined'){
 								points_data[index] = {
