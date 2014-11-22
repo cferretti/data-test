@@ -18,6 +18,16 @@ table#table-point-votes th:hover,table#table-point-votes th:active{
 	color : #000 !important;
 }
 
+table#table-point-votes th.sorting_desc:after{
+	content : url("https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-descending.png");
+	float : right;
+}
+
+table#table-point-votes th.sorting_asc:after{
+	content : url("https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-acscending.png");
+	float : right;
+}
+
 .votes-up{
 	float:left;
 	width : 50%;
@@ -104,6 +114,11 @@ p#votes-total-count {
   color : #00ACED;
   color : rgb(0, 172, 237);
   border-bottom : 1px solid #e5e5e5;
+}
+
+p#votes-total-count:after{
+	content : url("https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-people.png");
+	float : right;
 }
 
 p.votes-total-text {
