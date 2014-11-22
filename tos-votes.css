@@ -17,6 +17,8 @@
 }
 .votes-total{
 	clear : both;
+	display : block;
+	float : none;
 	color : #777;
 }
 
