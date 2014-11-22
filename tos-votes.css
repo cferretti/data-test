@@ -24,7 +24,7 @@ table#table-point-votes th.sorting_desc:after{
 }
 
 table#table-point-votes th.sorting_asc:after{
-	content : url("https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-acscending.png");
+	content : url("https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-ascending.png");
 	float : right;
 }
 
