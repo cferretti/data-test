@@ -54,5 +54,21 @@
 
 .rollover-color:hover{
 	background-position: -100% 0%;
+}
 
+tr.red,tr.amber,tr.green{
+	-webkit-transition: background-position 0.3s ease-out; /* For Safari 3.1 to 6.0 */
+    transition: background-position 0.3s ease-out;
+}
+
+tr.red:hover{
+	background-color:rgba(255, 58, 48, 0.1);
+}
+
+tr.amber:hover{
+	background-color:rgba(255, 149, 0, 0.1);
+}
+
+tr.green:hover{
+	background-color:rgba(76, 217, 100, 0.1);
 }

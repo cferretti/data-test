@@ -418,21 +418,24 @@
 			            }}
 			        ],
 			        "fnRowCallback": function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
-			        	
+			        		
+
+			        	var colorRow = 'amber';
+
 			        	$('td:eq(2)', nRow).addClass('rollover-color');
 			            if ( aData.point.toLowerCase() === "good" && aData.score > 20 )
 			            {
-			                $('td:eq(2)', nRow).addClass('green');
+			                colorRow = 'green';
 			            }else if ( aData.point.toLowerCase() === "bad" && aData.score > 20 )
 			            {
-			                $('td:eq(2)', nRow).addClass('red');
+			                colorRow = 'red';
 			            }else if ( aData.point.toLowerCase() === "blocker")
 			            {
-			                $('td:eq(2)', nRow).addClass('amber');
-			            }else
-			            {
-			                $('td:eq(2)', nRow).addClass('amber');
+			                colorRow = 'amber';
 			            }
+
+			            $('td:eq(2)', nRow).addClass(colorRow);
+		                $(nRow).addClass(colorRow);
 			        },
 			        order: [[ 2, "asc" ]]
 				});
