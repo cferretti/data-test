@@ -3,7 +3,7 @@ table#table-point-votes{
 }
 
 table#table-point-votes, table#table-point-votes tr, table#table-point-votes td, table#table-point-votes th{
-	border: 1px solid #9ca49d;
+	border: 1px solid #DDDDDD;
 }
 
 table#table-point-votes td,table#table-point-votes th{
