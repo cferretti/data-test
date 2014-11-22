@@ -1,6 +1,6 @@
 .votes-up{
 	float : left;
-	color : green;
+	color : #4CD964;
 }
 
 .votes-up:before{
@@ -9,7 +9,7 @@
 
 .votes-down{
 	float:right;
-	color : red;
+	color : #FF3A30;
 }
 
 .votes-down:before{
@@ -19,7 +19,7 @@
 	clear : both;
 	display : block;
 	float : none;
-	color : #777;
+	color : #9ca49d;
 }
 
 /*
@@ -30,25 +30,25 @@
 .rollover-color{
 	padding-left: 2% !important;
 	background-size: 200% 100%;
-	-webkit-transition: background-position 2s; /* For Safari 3.1 to 6.0 */
-    transition: background-position 2s;
+	-webkit-transition: background-position 0.3s ease-out; /* For Safari 3.1 to 6.0 */
+    transition: background-position 0.3s ease-out;
 }
 
 .rollover-color.red{
 	background-position: -2% 0%;
-	background-image : linear-gradient(to left, rgba(175, 5, 0, 1) 50%, rgba(0, 0, 0, 0) 50%);;
+	background-image : linear-gradient(to left, rgba(255, 58, 48, 1) 50%, rgba(0, 0, 0, 0) 50%);;
 
 }
 
 .rollover-color.green{
 	background-position: -2% 0%;
-	background-image : linear-gradient(to left, rgba(14, 127, 0, 1) 50%, rgba(0, 0, 0, 0) 50%);;
+	background-image : linear-gradient(to left, rgba(76,217,100, 1) 50%, rgba(0, 0, 0, 0) 50%);;
 
 }
 
 .rollover-color.amber{
 	background-position: -2% 0%;
-	background-image : linear-gradient(to left, rgba(175, 104, 0, 1) 50%, rgba(0, 0, 0, 0) 50%);;
+	background-image : linear-gradient(to left, rgba(255,149,0, 1) 50%, rgba(0, 0, 0, 0) 50%);;
 
 }
 
