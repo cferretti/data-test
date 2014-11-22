@@ -24,11 +24,15 @@ table#table-point-votes th:hover,table#table-point-votes th:active{
 table#table-point-votes th.sorting_desc:after{
 	content : url("https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-descending.png");
 	float : right;
+	background: #f2f2f2 !important;
+	color : #000 !important;
 }
 
 table#table-point-votes th.sorting_asc:after{
 	content : url("https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-ascending.png");
 	float : right;
+	background: #f2f2f2 !important;
+	color : #000 !important;
 }
 
 .votes-up{
