@@ -477,7 +477,7 @@
 
 		if($('#votes-total-count').length > 0){
 			AwsToS.getTotalVotes(function(total){
-				$('#votes-total-count').html(total);
+				$('#votes-total-count').html(total.toLocaleString());
 			});
 		}
 	});
