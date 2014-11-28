@@ -209,3 +209,15 @@ table#table-point-votes td.service{
 .youtube{
 	background-image: url(https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-youtube.png);
 }
+
+.tumblr{
+	background-image: url(https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-tumblr.png);
+}
+
+.google{
+	background-image: url(https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-google.png);
+}
+
+.yahoo{
+	background-image: url(https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-yahoo.png);
+}
