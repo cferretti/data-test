@@ -159,11 +159,11 @@ p.votes-total-text {
 	font-weight: bold;
 }
 
-.service{
+table#table-point-votes td.service{
 	background-size: 16px 16px;
 	background-repeat: no-repeat;
-	background-position: 5px center;
-	padding-left : 30px;
+	background-position: 15px center;
+	padding-left: 40px !important;
 }
 
 .facebook{
