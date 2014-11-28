@@ -16,6 +16,11 @@ table#table-point-votes td,table#table-point-votes th{
 	text-align: left;
 }
 
+
+table#table-point-votes th{
+	cursor : pointer;
+}
+
 table#table-point-votes th:hover,table#table-point-votes th:active,table#table-point-votes th.sorting_desc,table#table-point-votes th.sorting_asc{
 	background: #f2f2f2 !important;
 	color : #000 !important;
