@@ -412,15 +412,16 @@
 			        columns: [
 			        	{ "title": "", "data" : "point" , "visible": false,"searchable": false},
 			        	{ "title": "", "data" : "score" , "visible": false, "searchable": false},
-			            { "title": "Rank", "class":"service","width":"140px", "data" : "rank" },
-			            { "title": "Service", "class": "rev", "data" : "service" },
+			            { "title": "Rank", "class":"rank","width":"140px", "data" : "rank" },
+			            { "title": "Service", "class": "service", "data" : "service" },
 			            { "title": "Term", "data" : "term" },
 			            { "title" : "Votes", "width":"170px", "render" : function(data, type,full){
 			            	return "<span class='votes-up'>"+full.reasonable + "</span><span class='votes-down'>"+full.unreasonable + "</span><span class='votes-total'>"+(parseInt(full.reasonable)+parseInt(full.unreasonable)) + " votes</span>"; 
 			            }}
 			        ],
 			        "fnRowCallback": function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
-			        		
+			        	
+			        	$('td:eq(1)', nRow).addClass(aData.service);	
 
 			        	var colorRow = 'amber';
 

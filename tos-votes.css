@@ -16,7 +16,6 @@ table#table-point-votes td,table#table-point-votes th{
 	text-align: left;
 }
 
-
 table#table-point-votes th{
 	cursor : pointer;
 }
@@ -158,4 +157,55 @@ p.votes-total-text {
 
 .tos-votes-description p{
 	font-weight: bold;
+}
+
+.service{
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left : 30px;
+}
+
+.facebook{
+	background-image: url(https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-facebook.png);
+}
+
+.twitter{
+	background-image: url(https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-twitter.png);
+}
+
+.flickr{
+	background-image: url(https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-flickr.png);
+}
+
+.duckduckgo{
+	background-image: url(https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-duckduckgo.png);
+}
+
+.foursquare{
+	background-image: url(https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-foursquare.png);
+}
+
+.googleplus{
+	background-image: url(https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-googleplus.png);
+}
+
+.instagram{
+	background-image: url(https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-instagram.png);
+}
+
+.linkedin{
+	background-image: url(https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-linkedin.png);
+}
+
+.microsoft{
+	background-image: url(https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-microsoft.png);
+}
+
+.pinterest{
+	background-image: url(https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-pinterest.png);
+}
+
+.youtube{
+	background-image: url(https://raw.githubusercontent.com/cferretti/data-test/master/assetscitizenme/tos-assets/icon-youtube.png);
 }
