@@ -1,0 +1,72 @@
+{
+  "tours": [
+    {
+      "id": "61792aa25ae2665bc03c0827",
+      "startTime": 42300,
+      "duration": 1800,
+      "day": 5,
+      "nbParticipants": 14
+    },
+    {
+      "id": "61792aa2554f8bb0ea07defa",
+      "startTime": 55800,
+      "duration": 1800,
+      "day": 3,
+      "nbParticipants": 9
+    },
+    {
+      "id": "61792aa203c836274a19516a",
+      "startTime": 36900,
+      "duration": 1800,
+      "day": 2,
+      "nbParticipants": 6
+    },
+    {
+      "id": "61792aa2554f8bb0ea07defa",
+      "startTime": 35100,
+      "duration": 1800,
+      "day": 3,
+      "nbParticipants": 5
+    },
+    {
+      "id": "61792aa2b757d0e53ea584de",
+      "startTime": 42300,
+      "duration": 3600,
+      "day": 3,
+      "nbParticipants": 5
+    },
+    {
+      "id": "61792aa203c836274a19516a",
+      "startTime": 43200,
+      "duration": 1800,
+      "day": 3,
+      "nbParticipants": 15
+    }
+  ],
+  "employees": [
+    {
+      "id": "61792aa238c64cb6c4a8f7dd",
+      "name": "Luna Golden"
+    },
+    {
+      "id": "61792aa2b93b7c5762a705fb",
+      "name": "Holland Clemons"
+    },
+    {
+      "id": "61792aa203c836274a19516a",
+      "name": "Aida Gregory"
+    },
+    {
+      "id": "61792aa25ae2665bc03c0827",
+      "name": "West Vaughan"
+    },
+    {
+      "id": "61792aa2b757d0e53ea584de",
+      "name": "Briggs Foster"
+    },
+    {
+      "id": "61792aa2554f8bb0ea07defa",
+      "name": "Perez Cotton"
+    }
+  ]
+}
